@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>项目构建 | 星辰</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/xingchen/logo.ico">
+    <meta name="description" content="我的个人博客，记录点滴">
+    <link rel="preload" href="/xingchen/assets/css/0.styles.f612ea4d.css" as="style"><link rel="preload" href="/xingchen/assets/js/app.229d2230.js" as="script"><link rel="preload" href="/xingchen/assets/js/2.8855fdcf.js" as="script"><link rel="preload" href="/xingchen/assets/js/54.cc993159.js" as="script"><link rel="prefetch" href="/xingchen/assets/js/10.f6421621.js"><link rel="prefetch" href="/xingchen/assets/js/100.036a143c.js"><link rel="prefetch" href="/xingchen/assets/js/101.707b1832.js"><link rel="prefetch" href="/xingchen/assets/js/102.e5b0311e.js"><link rel="prefetch" href="/xingchen/assets/js/103.263d43d6.js"><link rel="prefetch" href="/xingchen/assets/js/104.d9f55754.js"><link rel="prefetch" href="/xingchen/assets/js/105.b456daf7.js"><link rel="prefetch" href="/xingchen/assets/js/106.884fdbd9.js"><link rel="prefetch" href="/xingchen/assets/js/107.d2b75208.js"><link rel="prefetch" href="/xingchen/assets/js/108.d3ecfdf0.js"><link rel="prefetch" href="/xingchen/assets/js/109.df8c62e6.js"><link rel="prefetch" href="/xingchen/assets/js/11.7b8c86b1.js"><link rel="prefetch" href="/xingchen/assets/js/110.687acc58.js"><link rel="prefetch" href="/xingchen/assets/js/111.b9800263.js"><link rel="prefetch" href="/xingchen/assets/js/112.408f4079.js"><link rel="prefetch" href="/xingchen/assets/js/113.ed66bcda.js"><link rel="prefetch" href="/xingchen/assets/js/114.a0885e56.js"><link rel="prefetch" href="/xingchen/assets/js/115.de792b7a.js"><link rel="prefetch" href="/xingchen/assets/js/116.378bc70f.js"><link rel="prefetch" href="/xingchen/assets/js/117.2f147110.js"><link rel="prefetch" href="/xingchen/assets/js/118.ac9c56cf.js"><link rel="prefetch" href="/xingchen/assets/js/119.f32faf7d.js"><link rel="prefetch" href="/xingchen/assets/js/12.97522e61.js"><link rel="prefetch" href="/xingchen/assets/js/13.e0f31045.js"><link rel="prefetch" href="/xingchen/assets/js/14.ac735026.js"><link rel="prefetch" href="/xingchen/assets/js/15.ca662528.js"><link rel="prefetch" href="/xingchen/assets/js/16.00fd9d34.js"><link rel="prefetch" href="/xingchen/assets/js/17.eb3d623d.js"><link rel="prefetch" href="/xingchen/assets/js/18.670441ca.js"><link rel="prefetch" href="/xingchen/assets/js/19.24521407.js"><link rel="prefetch" href="/xingchen/assets/js/20.00234395.js"><link rel="prefetch" href="/xingchen/assets/js/21.2aa5c192.js"><link rel="prefetch" href="/xingchen/assets/js/22.87fc01da.js"><link rel="prefetch" href="/xingchen/assets/js/23.e2a370ab.js"><link rel="prefetch" href="/xingchen/assets/js/24.651e8c8d.js"><link rel="prefetch" href="/xingchen/assets/js/25.6f8c3bc0.js"><link rel="prefetch" href="/xingchen/assets/js/26.40adcd33.js"><link rel="prefetch" href="/xingchen/assets/js/27.51985394.js"><link rel="prefetch" href="/xingchen/assets/js/28.02bdca75.js"><link rel="prefetch" href="/xingchen/assets/js/29.0ca43d57.js"><link rel="prefetch" href="/xingchen/assets/js/3.8deff05a.js"><link rel="prefetch" href="/xingchen/assets/js/30.c007b76c.js"><link rel="prefetch" href="/xingchen/assets/js/31.8039fd98.js"><link rel="prefetch" href="/xingchen/assets/js/32.ef73a2ed.js"><link rel="prefetch" href="/xingchen/assets/js/33.3c4aa289.js"><link rel="prefetch" href="/xingchen/assets/js/34.c691b4ff.js"><link rel="prefetch" href="/xingchen/assets/js/35.859eb6cd.js"><link rel="prefetch" href="/xingchen/assets/js/36.0e773536.js"><link rel="prefetch" href="/xingchen/assets/js/37.e354c1c6.js"><link rel="prefetch" href="/xingchen/assets/js/38.f2d1539f.js"><link rel="prefetch" href="/xingchen/assets/js/39.a6528a88.js"><link rel="prefetch" href="/xingchen/assets/js/4.79e3ce3d.js"><link rel="prefetch" href="/xingchen/assets/js/40.a28412b0.js"><link rel="prefetch" href="/xingchen/assets/js/41.1c7cf1c9.js"><link rel="prefetch" href="/xingchen/assets/js/42.8aa151a9.js"><link rel="prefetch" href="/xingchen/assets/js/43.bd670aee.js"><link rel="prefetch" href="/xingchen/assets/js/44.1488bac1.js"><link rel="prefetch" href="/xingchen/assets/js/45.a3c5c6e4.js"><link rel="prefetch" href="/xingchen/assets/js/46.b759d757.js"><link rel="prefetch" href="/xingchen/assets/js/47.7084526e.js"><link rel="prefetch" href="/xingchen/assets/js/48.c45d6e10.js"><link rel="prefetch" href="/xingchen/assets/js/49.79470823.js"><link rel="prefetch" href="/xingchen/assets/js/5.257dc403.js"><link rel="prefetch" href="/xingchen/assets/js/50.01f48bab.js"><link rel="prefetch" href="/xingchen/assets/js/51.66b77047.js"><link rel="prefetch" href="/xingchen/assets/js/52.1f85d274.js"><link rel="prefetch" href="/xingchen/assets/js/53.f596efc3.js"><link rel="prefetch" href="/xingchen/assets/js/55.a300d437.js"><link rel="prefetch" href="/xingchen/assets/js/56.5e2790e3.js"><link rel="prefetch" href="/xingchen/assets/js/57.3ad23f51.js"><link rel="prefetch" href="/xingchen/assets/js/58.a667f84b.js"><link rel="prefetch" href="/xingchen/assets/js/59.b9baddda.js"><link rel="prefetch" href="/xingchen/assets/js/6.c6ec0be5.js"><link rel="prefetch" href="/xingchen/assets/js/60.60d4cf9f.js"><link rel="prefetch" href="/xingchen/assets/js/61.c253df0a.js"><link rel="prefetch" href="/xingchen/assets/js/62.478394a4.js"><link rel="prefetch" href="/xingchen/assets/js/63.86c6ff6f.js"><link rel="prefetch" href="/xingchen/assets/js/64.07aa9a40.js"><link rel="prefetch" href="/xingchen/assets/js/65.634ef780.js"><link rel="prefetch" href="/xingchen/assets/js/66.6e6fdd4a.js"><link rel="prefetch" href="/xingchen/assets/js/67.33b10da5.js"><link rel="prefetch" href="/xingchen/assets/js/68.909f7918.js"><link rel="prefetch" href="/xingchen/assets/js/69.04b6ccac.js"><link rel="prefetch" href="/xingchen/assets/js/7.5c3fc392.js"><link rel="prefetch" href="/xingchen/assets/js/70.237f2650.js"><link rel="prefetch" href="/xingchen/assets/js/71.6e9d2c2d.js"><link rel="prefetch" href="/xingchen/assets/js/72.6470a864.js"><link rel="prefetch" href="/xingchen/assets/js/73.17df4c5c.js"><link rel="prefetch" href="/xingchen/assets/js/74.a2bae2d1.js"><link rel="prefetch" href="/xingchen/assets/js/75.f96b5d2a.js"><link rel="prefetch" href="/xingchen/assets/js/76.c3bd3f88.js"><link rel="prefetch" href="/xingchen/assets/js/77.db896217.js"><link rel="prefetch" href="/xingchen/assets/js/78.fa111f37.js"><link rel="prefetch" href="/xingchen/assets/js/79.50a247e3.js"><link rel="prefetch" href="/xingchen/assets/js/8.7fa031da.js"><link rel="prefetch" href="/xingchen/assets/js/80.2583f557.js"><link rel="prefetch" href="/xingchen/assets/js/81.3a2002f4.js"><link rel="prefetch" href="/xingchen/assets/js/82.54b86fac.js"><link rel="prefetch" href="/xingchen/assets/js/83.23e3e7fd.js"><link rel="prefetch" href="/xingchen/assets/js/84.5e0f25f3.js"><link rel="prefetch" href="/xingchen/assets/js/85.bb104c3d.js"><link rel="prefetch" href="/xingchen/assets/js/86.14d6cfa6.js"><link rel="prefetch" href="/xingchen/assets/js/87.0e27d030.js"><link rel="prefetch" href="/xingchen/assets/js/88.d1295d30.js"><link rel="prefetch" href="/xingchen/assets/js/89.c47047d2.js"><link rel="prefetch" href="/xingchen/assets/js/9.ed77320e.js"><link rel="prefetch" href="/xingchen/assets/js/90.de960985.js"><link rel="prefetch" href="/xingchen/assets/js/91.e9541dcb.js"><link rel="prefetch" href="/xingchen/assets/js/92.87fa5771.js"><link rel="prefetch" href="/xingchen/assets/js/93.220c565c.js"><link rel="prefetch" href="/xingchen/assets/js/94.c8d69e99.js"><link rel="prefetch" href="/xingchen/assets/js/95.371db2cb.js"><link rel="prefetch" href="/xingchen/assets/js/96.3e6c7406.js"><link rel="prefetch" href="/xingchen/assets/js/97.4814f9dd.js"><link rel="prefetch" href="/xingchen/assets/js/98.9b269db2.js"><link rel="prefetch" href="/xingchen/assets/js/99.9d73dc26.js">
+    <link rel="stylesheet" href="/xingchen/assets/css/0.styles.f612ea4d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xingchen/" class="home-link router-link-active"><!----> <span class="site-name">星辰</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/xingchen/basic/" class="nav-link router-link-active">
+  基础内容
+</a></div><div class="nav-item"><a href="/xingchen/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link">
+  综合
+</a></div><div class="nav-item"><a href="https://juejin.im/user/1714893870337518" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/changzhengithub/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/xingchen/basic/" class="nav-link router-link-active">
+  基础内容
+</a></div><div class="nav-item"><a href="/xingchen/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link">
+  综合
+</a></div><div class="nav-item"><a href="https://juejin.im/user/1714893870337518" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/changzhengithub/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>小程序</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/xingchen/basic/mini/小程序项目搭建.html" class="active sidebar-link">项目构建</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_1、创建准备" class="sidebar-link">1、创建准备</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_2、创建项目" class="sidebar-link">2、创建项目</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_3、项目结构设计" class="sidebar-link">3、项目结构设计</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_1、基础配置" class="sidebar-link">1、基础配置</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_2、css设置" class="sidebar-link">2、CSS设置</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_3、引入依赖包" class="sidebar-link">3、引入依赖包</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_4、引入vant-weapp组件" class="sidebar-link">4、引入Vant Weapp组件</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_5、接口封装" class="sidebar-link">5、接口封装</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_6、登录权限判断" class="sidebar-link">6、登录权限判断</a></li><li class="sidebar-sub-header"><a href="/xingchen/basic/mini/小程序项目搭建.html#_7、编码规范配置" class="sidebar-link">7、编码规范配置</a></li></ul></li><li><a href="/xingchen/basic/mini/微信开发者工具使用插件.html" class="sidebar-link">微信开发者工具使用插件</a></li><li><a href="/xingchen/basic/mini/小程序常见问题.html" class="sidebar-link">小程序常见问题</a></li><li><a href="/xingchen/basic/mini/自定义组件.html" class="sidebar-link">自定义组件</a></li><li><a href="/xingchen/basic/mini/自定义tabbar.html" class="sidebar-link">自定义tabbar</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工具函数</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Faq</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="项目构建"><a href="#项目构建" class="header-anchor">#</a> 项目构建</h1> <h2 id="_1、创建准备"><a href="#_1、创建准备" class="header-anchor">#</a> 1、创建准备</h2> <p>查看文档，注册小程序账号和下载开发者工具。</p> <p>创建小程序需要先注册账号 <a href="https://mp.weixin.qq.com/wxopen/waregister?action=step1" target="_blank" rel="noopener noreferrer">小程序注册<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ，注册后你就可以在你的账号上发布一个小程序，一个账号只能发布一个小程序。</p> <p>参考链接：<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer">小程序文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">开发者工具<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_2、创建项目"><a href="#_2、创建项目" class="header-anchor">#</a> 2、创建项目</h2> <p>打开开发者工具，项目-新建项目，到你注册的账号中去获取 <a href="https://mp.weixin.qq.com/" target="_blank" rel="noopener noreferrer">微信公众平台<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>  找到设置-基础设置复制AppID 创建项目。</p> <img src="/xingchen/img/mini01.png"> <h2 id="_3、项目结构设计"><a href="#_3、项目结构设计" class="header-anchor">#</a> 3、项目结构设计</h2> <p>项目创建好后，我们要配置项目结构中常见的模块目录，如assets、utils、componentsd等，和vue项目目录差不多。</p> <div class="language-plain extra-class"><pre class="language-text"><code>├── api                  # Api ajax 等
+├── assets               # 本地静态资源
+│   │   ├── images           # 项目图片
+│   │   ├── css              # reset、common样式
+│   │   ├── font             # 字体库
+│   │   ├── iconfont         # iconfont库
+│   │   └── less/sass        # 公共less/sass文件
+├── components               # 业务公共组件
+├── utils                    # 工具库
+├── pages                    # 页面目录
+│   ├── index                # index页面
+│   │   ├── index.js         # 页面逻辑处理
+│   │   ├── index.json       # 页面配置
+│   │   ├── index.wxml       # html
+│   │   ├── index.wxss       # css
+│   │   └── index.less       # less/sass
+├── .eslintrc.js             # eslint配置文件
+├── .gitignore               # git忽略
+├── package.json             # 包管理
+├── app.js                   # App 实例
+├── app.wxss                 # 公共样式表
+├── app.json                 # 全局配置
+├── README.md
+├── project.config.json      # 项目配置文件
+├── project.private.config.json # 和project.config相同，项目私有配置文件
+└── sitemap.json             # 配置小程序及其页面是否允许被微信索引
+</code></pre></div><h1 id="二、项目配置"><a href="#二、项目配置" class="header-anchor">#</a> 二、项目配置</h1> <h2 id="_1、基础配置"><a href="#_1、基础配置" class="header-anchor">#</a> 1、基础配置</h2> <p>如果要配置项目页面文件的路径、窗口表现、设置网络超时时间、设置多 tab、公共组件引入 等，可以通过app.json 文件进行配置。<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html" target="_blank" rel="noopener noreferrer">全局配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;pages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;pages/index/index&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;pages/logs/index&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;entryPagePath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pages/index/index&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;window&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;navigationBarTitleText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Demo&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;tabBar&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;pagePath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pages/index/index&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;首页&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;pagePath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pages/logs/index&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;日志&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;networkTimeout&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;downloadFile&quot;</span><span class="token operator">:</span> <span class="token number">10000</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sitemapLocation&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sitemap.json&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 全局使用公共组件</span>
+  <span class="token property">&quot;usingComponents&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;van-button&quot;</span><span class="token operator">:</span> <span class="token string">&quot;@vant/weapp/button/index&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果要对某个页面单独配置如设置标题，标题颜色，引入的插件等，只需要在对应页面的 .json 文件中设置即可。<a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/page.html" target="_blank" rel="noopener noreferrer">页面配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;navigationBarBackgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#ffffff&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;navigationBarTextStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;black&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;navigationBarTitleText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;微信接口功能演示&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;backgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#eeeeee&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;backgroundTextStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;light&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;usingComponents&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;van-dropdown-menu&quot;</span><span class="token operator">:</span> <span class="token string">&quot;@vant/weapp/dropdown-menu/index&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>项目配置，针对整个项目或程序的配置</p> <p>项目根目录中的 project.config.json 和 project.private.config.json 文件可以对项目进行配置，project.private.config.json 中的相同设置优先级高于 project.config.json。project.private.config.json是配置个人的配置。<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html" target="_blank" rel="noopener noreferrer">项目配置文件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>这里配置比如一些小程序基础信息，插件构建路径。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;setting&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;packNpmManually&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;packNpmRelationList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;packageJsonPath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./package.json&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;miniprogramNpmDistDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;compileType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;miniprogram&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;libVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.16.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;appid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wx618158e394f27d94&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;projectname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sanshiopsmanage&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editorSetting&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;tabIndent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;insertSpaces&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tabSize&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_2、css设置"><a href="#_2、css设置" class="header-anchor">#</a> 2、CSS设置</h2> <p>通用样式我们在 app.wxss 全局样式文件中设置，相当于reset.css，每个页面都会自动引入。也可以在app.wxss中引入其他公共样式，比如引入插件需要的样式，自定义的样式都可以。</p> <p>每个页面里的样式在.wxss中写，但是纯css写很麻烦，我们可以借助扩展插件使用less或sass来解决。</p> <p><a href="https://shimo.im/docs/0l3NVDpeJ1fpX73R" target="_blank" rel="noopener noreferrer">微信开发者工具使用插件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_3、引入依赖包"><a href="#_3、引入依赖包" class="header-anchor">#</a> 3、引入依赖包</h2> <p>小程序也可以像vue一样使用npm插件，创建好项目，打开终端，就可以直接安装插件了。</p> <p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html" target="_blank" rel="noopener noreferrer">npm 支持<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="/img/mini02.png" alt="图片"></p> <p>在根目录创建 package.json 文件，执行命令直接回车。只需初始化时执行一次，后续只要npm i 就可以了。</p> <div class="language-json extra-class"><pre class="language-json"><code>npm init
+</code></pre></div><p>然后在小程序 package.json 所在的目录中执行命令安装 npm 包。</p> <div class="language-json extra-class"><pre class="language-json"><code>npm install xxx
+</code></pre></div><p>安装好插件依赖后，还需要构建npm。</p> <p>点击开发者工具中的菜单栏：工具 --&gt; 构建 npm。</p> <p>低版本的还需要勾选  <strong>npm 模块</strong> 选项。打开右上详情-本地设置。</p> <p><img src="/img/mini03.png" alt="图片"></p> <p><img src="/img/mini04.png" alt="图片"></p> <p>为什么小程序要 构建npm，因为node_modules不会参与小程序的构建，需要使用构建npm来生成小程序能识别的包文件，构建会在包同级目录生成miniprogram_npm文件，里面目录结构和node_modules一一对应，我们引入也是引入此文件中的包。</p> <p>生成的miniprogram_npm文件位置是根据 project.config.json 中 miniprogramRoot 设置的位置生成的，没有 miniprogramRoot 则和 project.config.json同级。</p> <p>之前的旧版本构建位置默认在 miniprogram 文件中，没有和package.json同级，使用会有问题，需要在project.config.json文件中配置构建的目录，让构建的目录和package.json同级。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;packNpmManually&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token property">&quot;packNpmRelationList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;packageJsonPath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./package.json&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;miniprogramNpmDistDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>目前最新版本的开发者工具默认构建在和package.json同级的，不需要再配置构建目录，为了保险起见我们都在project.config.json中为所有插件配置好。此配置只需配置一次。</p> <h2 id="_4、引入vant-weapp组件"><a href="#_4、引入vant-weapp组件" class="header-anchor">#</a> 4、引入Vant Weapp组件</h2> <p>文档：<a href="https://vant-contrib.gitee.io/vant-weapp/#/home" target="_blank" rel="noopener noreferrer">Vant Weapp<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>安装配置：</p> <p>1、npm安装</p> <div class="language-json extra-class"><pre class="language-json"><code>npm i @vant/weapp -S --production
+</code></pre></div><p>2、将 app.json 中的 &quot;style&quot;: &quot;v2&quot; 去除。
+3、修改构建目录，在project.config.json中统一设置，此配置只需配置一次。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;packNpmManually&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token property">&quot;packNpmRelationList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;packageJsonPath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./package.json&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;miniprogramNpmDistDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>4、安装好后执行构建npm。然后在miniprogram_npm可以看到@vant 文件了
+使用</p> <p>1、在页面中使用</p> <p>在页面中使用直接在页面的.json文件引入组件，和自定义组件一样，注意的是如果你的页面目录不对，组件引用地址可能会出问题，找不到此组件，可以尝试使用相对路径找到miniprogram_npm下对应的组件就可以了。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;usingComponents&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;van-button&quot;</span><span class="token operator">:</span> <span class="token string">&quot;@vant/weapp/button/index&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>2、全局使用
+全局使用直接在app.son中设置usingComponents，这样所有组件就都可以使用了。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;usingComponents&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;van-button&quot;</span><span class="token operator">:</span> <span class="token string">&quot;@vant/weapp/button/index&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-json extra-class"><pre class="language-json"><code>&lt;!--index.wxml--&gt;
+&lt;view class=<span class="token string">&quot;container&quot;</span>&gt;
+  &lt;van-button type=<span class="token string">&quot;default&quot;</span>&gt;默认按钮&lt;/van-button&gt;
+  &lt;van-button type=<span class="token string">&quot;primary&quot;</span>&gt;主要按钮&lt;/van-button&gt;
+  &lt;van-button type=<span class="token string">&quot;info&quot;</span>&gt;信息按钮&lt;/van-button&gt;
+  &lt;van-button type=<span class="token string">&quot;warning&quot;</span>&gt;警告按钮&lt;/van-button&gt;
+  &lt;van-button type=<span class="token string">&quot;danger&quot;</span>&gt;危险按钮&lt;/van-button&gt;
+&lt;/view&gt;
+</code></pre></div><p>使用内置样式</p> <p>在 app.wxss 中引入内置样式，这样就可以使用vant自带的一些样式类了。</p> <div class="language-json extra-class"><pre class="language-json"><code>@import '@vant/weapp/common/index.wxss';
+</code></pre></div><h2 id="_5、接口封装"><a href="#_5、接口封装" class="header-anchor">#</a> 5、接口封装</h2> <p>小程序调用接口是使用自带的请求方法wx.request()，不需要再使用其他请求插件。但是这样每次调用都很麻烦，也没有做请求拦截，所以要封装一下，统一处理。</p> <p>1、在utils下创建request.js文件，对接口请求统一处理。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// utils/request.js</span>
+<span class="token comment">/**
+ * @description 请求接口封装
+ * @author changz
+ * */</span> 
+
+<span class="token keyword">const</span> <span class="token constant">BASE_URL</span> <span class="token operator">=</span> <span class="token string">'https://api.itops.yunsee.cn'</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> hasInvalid <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">// 判断是否有token失效，不同地方多次调用此变量也可以被访问</span>
+
+<span class="token comment">/**
+ * @description 请求方法封装
+ * @desc 错误统一拦截
+ * @desc token过期统一处理
+ * @desc then里会返回所有的业务状态码，所以不是200的要返回提示
+ * @desc catch里只拦截接口请求错误，如404、401、500和fail里的错误
+ * 把这些错误统一成一种格式返回提示
+ * @param {String} [url] - 请求地址
+ * @param {String} [method] - 请求方法
+ * @param {Object} [params] - 请求参数 {}
+ * @param {String} [loadText] - 加载动画提示，默认无
+ * @example request({})
+ * @author changz
+ * */</span>
+<span class="token keyword">function</span><span class="token function"> request</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>url<span class="token punctuation">,</span> method<span class="token punctuation">,</span> params<span class="token punctuation">,</span> loadText<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> reject<span class="token punctuation">)</span><span class="token parameter"> </span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token parameter">loadText</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      wx<span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        title<span class="token operator">:</span> loadText<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">let</span> header <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token string">'content-type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span>wx<span class="token punctuation">.</span><span class="token function">getStorageSync</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      header<span class="token punctuation">[</span><span class="token string">'Authorization'</span><span class="token punctuation">]</span> <span class="token operator">=</span> wx<span class="token punctuation">.</span><span class="token function">getStorageSync</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    wx<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">BASE_URL</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>url<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      method<span class="token punctuation">,</span>
+      data<span class="token operator">:</span> params<span class="token punctuation">,</span>
+      header<span class="token punctuation">,</span>
+<span class="token function">      success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        wx<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> statusCode<span class="token punctuation">,</span> data <span class="token punctuation">}</span> <span class="token operator">=</span> res<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token parameter">statusCode <span class="token operator">==</span> <span class="token number">200</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token function">          resolve</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token parameter">statusCode <span class="token operator">==</span> <span class="token number">401</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span>hasInvalid<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token comment">// 已经有失效跳转到登录</span>
+          wx<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            title<span class="token operator">:</span> <span class="token string">'登录过期'</span><span class="token punctuation">,</span>
+            icon<span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+            duration<span class="token operator">:</span> <span class="token number">1500</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          hasInvalid <span class="token operator">=</span> <span class="token boolean">true</span>
+          <span class="token comment">// 跳转到登录页</span>
+<span class="token function">          setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token parameter"> </span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            wx<span class="token punctuation">.</span><span class="token function">reLaunch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+              url<span class="token operator">:</span> <span class="token string">'/pages/empower/index'</span><span class="token punctuation">,</span>
+<span class="token function-variable function">              complete</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                hasInvalid <span class="token operator">=</span> <span class="token boolean">false</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1500</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+<span class="token function">          reject</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            errMsg<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">请求失败：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>statusCode<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+            data<span class="token operator">:</span> res
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token function">      fail</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        wx<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">        reject</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          errMsg<span class="token operator">:</span> err<span class="token punctuation">.</span>errMsg<span class="token punctuation">,</span>
+          data<span class="token operator">:</span> err
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> request
+</code></pre></div><p>2、在api下创建接口地址统一处理文件</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// api/login.js</span>
+
+<span class="token keyword">import</span> request <span class="token keyword">from</span> <span class="token string">'../utils/request'</span>
+
+<span class="token keyword">const</span> api <span class="token operator">=</span> <span class="token punctuation">{</span>
+  miniLogin<span class="token operator">:</span> <span class="token string">'/api/common/miniLogin'</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 登录</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span><span class="token function"> miniLoginApi</span><span class="token punctuation">(</span><span class="token parameter">parameter<span class="token punctuation">,</span> loadText</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span><span class="token function"> request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    url<span class="token operator">:</span> api<span class="token punctuation">.</span>miniLogin<span class="token punctuation">,</span>
+    method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    params<span class="token operator">:</span> parameter<span class="token punctuation">,</span>
+    loadText
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>3、在组件调用</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> miniLoginApi <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../../api/login'</span>
+
+<span class="token comment">// 登录</span>
+<span class="token function">userLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> that <span class="token operator">=</span> <span class="token keyword">this</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> code <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data
+  <span class="token keyword">const</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+    code
+  <span class="token punctuation">}</span>
+<span class="token function">  miniLoginApi</span><span class="token punctuation">(</span>params<span class="token punctuation">,</span> <span class="token string">'加装中...'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token parameter"> </span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token parameter">res<span class="token punctuation">.</span>code <span class="token operator">!==</span> <span class="token number">200</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        wx<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          title<span class="token operator">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+          icon<span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+          duration<span class="token operator">:</span> <span class="token number">2000</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> data<span class="token punctuation">,</span> token <span class="token punctuation">}</span> <span class="token operator">=</span> res
+      wx<span class="token punctuation">.</span><span class="token function">setStorageSync</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">,</span> token<span class="token punctuation">)</span>
+      wx<span class="token punctuation">.</span><span class="token function">setStorageSync</span><span class="token punctuation">(</span><span class="token string">'userInfo'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+      <span class="token comment">// 登录成功跳转到首页</span>
+      wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        url<span class="token operator">:</span> <span class="token string">'/pages/index/index'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token parameter"> </span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+      wx<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        title<span class="token operator">:</span> err<span class="token punctuation">.</span>errMsg<span class="token punctuation">,</span>
+        icon<span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+        duration<span class="token operator">:</span> <span class="token number">2000</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6、登录权限判断"><a href="#_6、登录权限判断" class="header-anchor">#</a> 6、登录权限判断</h2> <p>小程序登录情形大概分为两种，一种是小程序进来就需要登录，我们可以让小程序每次进入时就默认打开登录页，执行一遍登录操作后再进入；另一种不论登不登录都可以进来，当需要登录时再跳转到登录页或者直接调登录接口登录，然后再根据用户信息判断。</p> <p>两种情形的权限判断都类似，只是第二种多了一步判断是否登录。</p> <ol><li>判断缓存是否有token，或者其他登录凭证。</li> <li>没有token跳转到登录页，或者直接调用登录接口，登录后缓存token。</li> <li>如果有token则直接进入页面调用接口。</li> <li>如果调用接口后token过期失效，则重新跳到登录页登录。
+这其中涉及到在哪进行判断是否登录，在哪里判断token是否过期，多次请求同时过期如何解决。</li></ol> <p>1、在哪里进行判断是否登录</p> <p>因为很多页面都可能需要判断，所以我们在utils下创建一个permission.js文件单独用来做判断，然后引入到所需的页面去调用和判断。当然，可以在这个文件里根据项目需求进行相应的逻辑处理。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// utils/permission.js</span>
+
+<span class="token comment">/**
+ * 权限判断
+ * 在需要做权限判断的页面引入
+ * 如果返回true则已登录，则进行已登录的操作，没有登录跳转都登录页
+ * 当然也可以进行页面拦截，没有登录直接返回上一页
+ * 判断登录页也可以使用接口判断，因为是异步所以要使用async await 等待获取
+ * */</span> 
+
+<span class="token comment">// 检查是否登录</span>
+<span class="token keyword">function</span><span class="token function"> checkLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> isLogin <span class="token operator">=</span> <span class="token boolean">false</span>
+  <span class="token keyword">const</span> token <span class="token operator">=</span> wx<span class="token punctuation">.</span><span class="token function">getStorageSync</span><span class="token punctuation">(</span><span class="token string">'token'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token parameter">token</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    isLogin <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    wx<span class="token punctuation">.</span><span class="token function">clearStorageSync</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> isLogin
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  checkLogin
+<span class="token punctuation">}</span>
+</code></pre></div><p>在页面中进行获取，这里根据项目需求情况来判断。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>index<span class="token punctuation">.</span>wxml<span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>view <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;index&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>van<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">&quot;default&quot;</span> bindtap<span class="token operator">=</span><span class="token string">&quot;showToast&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>initData <span class="token operator">?</span> <span class="token string">'已登录'</span> <span class="token operator">:</span> <span class="token string">'请登录'</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>van<span class="token operator">-</span>button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>van<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">&quot;primary&quot;</span> wx<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">&quot;{{!userIsLogin}}&quot;</span> bindtap<span class="token operator">=</span><span class="token string">&quot;getLoginInfo&quot;</span><span class="token operator">&gt;</span>登录<span class="token operator">&lt;</span><span class="token operator">/</span>van<span class="token operator">-</span>button<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// index.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> menusApi <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../../api/index'</span>
+<span class="token keyword">import</span> permission <span class="token keyword">from</span> <span class="token string">'../../utils/permission'</span>
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    userIsLogin<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    initData<span class="token operator">:</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+<span class="token function-variable function">  onShow</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> isLogin <span class="token operator">=</span> permission<span class="token punctuation">.</span><span class="token function">checkLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      userIsLogin<span class="token operator">:</span> isLogin
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token parameter"><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>userIsLogin</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getInitData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token function">  getInitData</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> that <span class="token operator">=</span> <span class="token keyword">this</span>
+<span class="token function">    menusApi</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">'加装中...'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token parameter"> </span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token parameter">res<span class="token punctuation">.</span>code <span class="token operator">!==</span> <span class="token number">200</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          wx<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            title<span class="token operator">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+            icon<span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+            duration<span class="token operator">:</span> <span class="token number">2000</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token keyword">return</span>
+        <span class="token punctuation">}</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> data <span class="token operator">=</span> res<span class="token punctuation">.</span>data
+        that<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          initData<span class="token operator">:</span> data
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token parameter"> </span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+        wx<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          title<span class="token operator">:</span> err<span class="token punctuation">.</span>errMsg<span class="token punctuation">,</span>
+          icon<span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+          duration<span class="token operator">:</span> <span class="token number">2000</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 去登录</span>
+<span class="token function">  getLoginInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token function"> </span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>userIsLogin<span class="token punctuation">)</span> <span class="token keyword">return</span>
+    wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span> <span class="token string">'/pages/empower/index'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>2、判断token过期</p> <p>我们在接口封装request.js中统一对错误请求进行了拦截，只需判断请求状态码为401就可以直接跳转到登录就行了。</p> <p>3、多次请求同时过期如何解决</p> <p>当一个页面同时请求几个接口，这时token失效了，判断401时会多次跳转到登录页，为了减少这种不必要的跳转，我们需要进行判断，只跳转一次登录页就行了。</p> <p>我们可以在request.js中定义一个变量，这个变量相当于全局变量，不论在哪里引入都能访问这个变量，所以只需在request.js中对这个变量判断就行。</p> <h2 id="_7、编码规范配置"><a href="#_7、编码规范配置" class="header-anchor">#</a> 7、编码规范配置</h2> <p>1、格式化代码</p> <p>格式化代码和vue项目一样，我们使用Prettier进行配置，在扩展中下载prettier插件，然后在项目根目录创建.prettierrc.js文件，进行配置我们需要的格式。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 一行最多 100 字符</span>
+  printWidth<span class="token operator">:</span> <span class="token number">180</span><span class="token punctuation">,</span>
+  <span class="token comment">// 使用 2 个空格缩进</span>
+  tabWidth<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token comment">// 不使用缩进符，而使用空格</span>
+  useTabs<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 行尾需要有分号</span>
+  semi<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 使用单引号</span>
+  singleQuote<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 对象的 key 仅在必要时用引号</span>
+  quoteProps<span class="token operator">:</span> <span class="token string">'as-needed'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 末尾不需要逗号</span>
+  trailingComma<span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 大括号内的首尾需要空格</span>
+  bracketSpacing<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 箭头函数，只有一个参数的时候，也需要括号</span>
+  arrowParens<span class="token operator">:</span> <span class="token string">'always'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 每个文件格式化的范围是文件的全部内容</span>
+  rangeStart<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  rangeEnd<span class="token operator">:</span> <span class="token number">Infinity</span><span class="token punctuation">,</span>
+  <span class="token comment">// 不需要写文件开头的 @prettier</span>
+  requirePragma<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 不需要自动在文件开头插入 @prettier</span>
+  insertPragma<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 使用默认的折行标准</span>
+  proseWrap<span class="token operator">:</span> <span class="token string">'preserve'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 根据显示样式决定 html 要不要折行</span>
+  htmlWhitespaceSensitivity<span class="token operator">:</span> <span class="token string">'css'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后在文件中右击-&gt;格式化文档，方法-&gt;配置默认格式化-&gt;Prettier。配置好后以后只需右击选择格式化文档就行了。</p> <p><img src="/img/mini05.png" alt="图片"></p> <p><img src="/img/mini06.png" alt="图片"></p> <p>2、代码检查</p> <p>暂时以vue项目的格式进行编写。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/18/2023, 9:56:56 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xingchen/basic/typescript/TS关键字.html" class="prev">
+        TS关键字
+      </a></span> <span class="next"><a href="/xingchen/basic/mini/微信开发者工具使用插件.html">
+        微信开发者工具使用插件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xingchen/assets/js/app.229d2230.js" defer></script><script src="/xingchen/assets/js/2.8855fdcf.js" defer></script><script src="/xingchen/assets/js/54.cc993159.js" defer></script>
+  </body>
+</html>

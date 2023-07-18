@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>搭建Eslint编码规范项目 | 星辰</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/xingchen/logo.ico">
+    <meta name="description" content="我的个人博客，记录点滴">
+    <link rel="preload" href="/xingchen/assets/css/0.styles.f612ea4d.css" as="style"><link rel="preload" href="/xingchen/assets/js/app.229d2230.js" as="script"><link rel="preload" href="/xingchen/assets/js/2.8855fdcf.js" as="script"><link rel="preload" href="/xingchen/assets/js/117.2f147110.js" as="script"><link rel="prefetch" href="/xingchen/assets/js/10.f6421621.js"><link rel="prefetch" href="/xingchen/assets/js/100.036a143c.js"><link rel="prefetch" href="/xingchen/assets/js/101.707b1832.js"><link rel="prefetch" href="/xingchen/assets/js/102.e5b0311e.js"><link rel="prefetch" href="/xingchen/assets/js/103.263d43d6.js"><link rel="prefetch" href="/xingchen/assets/js/104.d9f55754.js"><link rel="prefetch" href="/xingchen/assets/js/105.b456daf7.js"><link rel="prefetch" href="/xingchen/assets/js/106.884fdbd9.js"><link rel="prefetch" href="/xingchen/assets/js/107.d2b75208.js"><link rel="prefetch" href="/xingchen/assets/js/108.d3ecfdf0.js"><link rel="prefetch" href="/xingchen/assets/js/109.df8c62e6.js"><link rel="prefetch" href="/xingchen/assets/js/11.7b8c86b1.js"><link rel="prefetch" href="/xingchen/assets/js/110.687acc58.js"><link rel="prefetch" href="/xingchen/assets/js/111.b9800263.js"><link rel="prefetch" href="/xingchen/assets/js/112.408f4079.js"><link rel="prefetch" href="/xingchen/assets/js/113.ed66bcda.js"><link rel="prefetch" href="/xingchen/assets/js/114.a0885e56.js"><link rel="prefetch" href="/xingchen/assets/js/115.de792b7a.js"><link rel="prefetch" href="/xingchen/assets/js/116.378bc70f.js"><link rel="prefetch" href="/xingchen/assets/js/118.ac9c56cf.js"><link rel="prefetch" href="/xingchen/assets/js/119.f32faf7d.js"><link rel="prefetch" href="/xingchen/assets/js/12.97522e61.js"><link rel="prefetch" href="/xingchen/assets/js/13.e0f31045.js"><link rel="prefetch" href="/xingchen/assets/js/14.ac735026.js"><link rel="prefetch" href="/xingchen/assets/js/15.ca662528.js"><link rel="prefetch" href="/xingchen/assets/js/16.00fd9d34.js"><link rel="prefetch" href="/xingchen/assets/js/17.eb3d623d.js"><link rel="prefetch" href="/xingchen/assets/js/18.670441ca.js"><link rel="prefetch" href="/xingchen/assets/js/19.24521407.js"><link rel="prefetch" href="/xingchen/assets/js/20.00234395.js"><link rel="prefetch" href="/xingchen/assets/js/21.2aa5c192.js"><link rel="prefetch" href="/xingchen/assets/js/22.87fc01da.js"><link rel="prefetch" href="/xingchen/assets/js/23.e2a370ab.js"><link rel="prefetch" href="/xingchen/assets/js/24.651e8c8d.js"><link rel="prefetch" href="/xingchen/assets/js/25.6f8c3bc0.js"><link rel="prefetch" href="/xingchen/assets/js/26.40adcd33.js"><link rel="prefetch" href="/xingchen/assets/js/27.51985394.js"><link rel="prefetch" href="/xingchen/assets/js/28.02bdca75.js"><link rel="prefetch" href="/xingchen/assets/js/29.0ca43d57.js"><link rel="prefetch" href="/xingchen/assets/js/3.8deff05a.js"><link rel="prefetch" href="/xingchen/assets/js/30.c007b76c.js"><link rel="prefetch" href="/xingchen/assets/js/31.8039fd98.js"><link rel="prefetch" href="/xingchen/assets/js/32.ef73a2ed.js"><link rel="prefetch" href="/xingchen/assets/js/33.3c4aa289.js"><link rel="prefetch" href="/xingchen/assets/js/34.c691b4ff.js"><link rel="prefetch" href="/xingchen/assets/js/35.859eb6cd.js"><link rel="prefetch" href="/xingchen/assets/js/36.0e773536.js"><link rel="prefetch" href="/xingchen/assets/js/37.e354c1c6.js"><link rel="prefetch" href="/xingchen/assets/js/38.f2d1539f.js"><link rel="prefetch" href="/xingchen/assets/js/39.a6528a88.js"><link rel="prefetch" href="/xingchen/assets/js/4.79e3ce3d.js"><link rel="prefetch" href="/xingchen/assets/js/40.a28412b0.js"><link rel="prefetch" href="/xingchen/assets/js/41.1c7cf1c9.js"><link rel="prefetch" href="/xingchen/assets/js/42.8aa151a9.js"><link rel="prefetch" href="/xingchen/assets/js/43.bd670aee.js"><link rel="prefetch" href="/xingchen/assets/js/44.1488bac1.js"><link rel="prefetch" href="/xingchen/assets/js/45.a3c5c6e4.js"><link rel="prefetch" href="/xingchen/assets/js/46.b759d757.js"><link rel="prefetch" href="/xingchen/assets/js/47.7084526e.js"><link rel="prefetch" href="/xingchen/assets/js/48.c45d6e10.js"><link rel="prefetch" href="/xingchen/assets/js/49.79470823.js"><link rel="prefetch" href="/xingchen/assets/js/5.257dc403.js"><link rel="prefetch" href="/xingchen/assets/js/50.01f48bab.js"><link rel="prefetch" href="/xingchen/assets/js/51.66b77047.js"><link rel="prefetch" href="/xingchen/assets/js/52.1f85d274.js"><link rel="prefetch" href="/xingchen/assets/js/53.f596efc3.js"><link rel="prefetch" href="/xingchen/assets/js/54.cc993159.js"><link rel="prefetch" href="/xingchen/assets/js/55.a300d437.js"><link rel="prefetch" href="/xingchen/assets/js/56.5e2790e3.js"><link rel="prefetch" href="/xingchen/assets/js/57.3ad23f51.js"><link rel="prefetch" href="/xingchen/assets/js/58.a667f84b.js"><link rel="prefetch" href="/xingchen/assets/js/59.b9baddda.js"><link rel="prefetch" href="/xingchen/assets/js/6.c6ec0be5.js"><link rel="prefetch" href="/xingchen/assets/js/60.60d4cf9f.js"><link rel="prefetch" href="/xingchen/assets/js/61.c253df0a.js"><link rel="prefetch" href="/xingchen/assets/js/62.478394a4.js"><link rel="prefetch" href="/xingchen/assets/js/63.86c6ff6f.js"><link rel="prefetch" href="/xingchen/assets/js/64.07aa9a40.js"><link rel="prefetch" href="/xingchen/assets/js/65.634ef780.js"><link rel="prefetch" href="/xingchen/assets/js/66.6e6fdd4a.js"><link rel="prefetch" href="/xingchen/assets/js/67.33b10da5.js"><link rel="prefetch" href="/xingchen/assets/js/68.909f7918.js"><link rel="prefetch" href="/xingchen/assets/js/69.04b6ccac.js"><link rel="prefetch" href="/xingchen/assets/js/7.5c3fc392.js"><link rel="prefetch" href="/xingchen/assets/js/70.237f2650.js"><link rel="prefetch" href="/xingchen/assets/js/71.6e9d2c2d.js"><link rel="prefetch" href="/xingchen/assets/js/72.6470a864.js"><link rel="prefetch" href="/xingchen/assets/js/73.17df4c5c.js"><link rel="prefetch" href="/xingchen/assets/js/74.a2bae2d1.js"><link rel="prefetch" href="/xingchen/assets/js/75.f96b5d2a.js"><link rel="prefetch" href="/xingchen/assets/js/76.c3bd3f88.js"><link rel="prefetch" href="/xingchen/assets/js/77.db896217.js"><link rel="prefetch" href="/xingchen/assets/js/78.fa111f37.js"><link rel="prefetch" href="/xingchen/assets/js/79.50a247e3.js"><link rel="prefetch" href="/xingchen/assets/js/8.7fa031da.js"><link rel="prefetch" href="/xingchen/assets/js/80.2583f557.js"><link rel="prefetch" href="/xingchen/assets/js/81.3a2002f4.js"><link rel="prefetch" href="/xingchen/assets/js/82.54b86fac.js"><link rel="prefetch" href="/xingchen/assets/js/83.23e3e7fd.js"><link rel="prefetch" href="/xingchen/assets/js/84.5e0f25f3.js"><link rel="prefetch" href="/xingchen/assets/js/85.bb104c3d.js"><link rel="prefetch" href="/xingchen/assets/js/86.14d6cfa6.js"><link rel="prefetch" href="/xingchen/assets/js/87.0e27d030.js"><link rel="prefetch" href="/xingchen/assets/js/88.d1295d30.js"><link rel="prefetch" href="/xingchen/assets/js/89.c47047d2.js"><link rel="prefetch" href="/xingchen/assets/js/9.ed77320e.js"><link rel="prefetch" href="/xingchen/assets/js/90.de960985.js"><link rel="prefetch" href="/xingchen/assets/js/91.e9541dcb.js"><link rel="prefetch" href="/xingchen/assets/js/92.87fa5771.js"><link rel="prefetch" href="/xingchen/assets/js/93.220c565c.js"><link rel="prefetch" href="/xingchen/assets/js/94.c8d69e99.js"><link rel="prefetch" href="/xingchen/assets/js/95.371db2cb.js"><link rel="prefetch" href="/xingchen/assets/js/96.3e6c7406.js"><link rel="prefetch" href="/xingchen/assets/js/97.4814f9dd.js"><link rel="prefetch" href="/xingchen/assets/js/98.9b269db2.js"><link rel="prefetch" href="/xingchen/assets/js/99.9d73dc26.js">
+    <link rel="stylesheet" href="/xingchen/assets/css/0.styles.f612ea4d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xingchen/" class="home-link router-link-active"><!----> <span class="site-name">星辰</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/xingchen/basic/" class="nav-link">
+  基础内容
+</a></div><div class="nav-item"><a href="/xingchen/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link">
+  综合
+</a></div><div class="nav-item"><a href="https://juejin.im/user/1714893870337518" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/changzhengithub/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/xingchen/basic/" class="nav-link">
+  基础内容
+</a></div><div class="nav-item"><a href="/xingchen/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link">
+  综合
+</a></div><div class="nav-item"><a href="https://juejin.im/user/1714893870337518" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/changzhengithub/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础内容</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue3.0</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/xingchen/vue/vue3/基础内容.html" class="sidebar-link">vue3基础内容</a></li><li><a href="/xingchen/vue/vue3/vue3新内容.html" class="sidebar-link">vue2.7过渡内容</a></li><li><a href="/xingchen/vue/vue3/搭建Eslint编码规范项目.html" class="active sidebar-link">搭建Eslint编码规范项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/xingchen/vue/vue3/搭建Eslint编码规范项目.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue3/搭建Eslint编码规范项目.html#创建" class="sidebar-link">创建</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue3/搭建Eslint编码规范项目.html#修改编码规范" class="sidebar-link">修改编码规范</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue3/搭建Eslint编码规范项目.html#格式化文件" class="sidebar-link">格式化文件</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue3/搭建Eslint编码规范项目.html#问题" class="sidebar-link">问题</a></li></ul></li><li><a href="/xingchen/vue/vue3/arco-design使用.html" class="sidebar-link">arco-design的使用与问题</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue Router</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vuex</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Faq</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="搭建eslint编码规范项目"><a href="#搭建eslint编码规范项目" class="header-anchor">#</a> 搭建Eslint编码规范项目</h1> <p>使用 vue-cli 创建3.0版本项目，并搭建 standard 风格编码规范。</p> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <p>升级vue-cli，最新版本就不需要升级了。</p> <div class="language- extra-class"><pre class="language-text"><code>npm install -g @vue/cli
+</code></pre></div><h2 id="创建"><a href="#创建" class="header-anchor">#</a> 创建</h2> <p>执行命令</p> <div class="language- extra-class"><pre class="language-text"><code>vue create vue-test
+</code></pre></div><p>执行创建命名后，选择 <code>Manually select features</code> 选项，不要选前两个默认选项，然后手动选择 <code>Babel</code>、<code>Router</code>、<code>Vuex</code>、<code>CSS Pre-processors</code>、<code>Linter / Formatter</code>等选项，然后选择版本2.x或者3.x，然后输入Y回车，然后选择less或sass，然后选择编码规范 <code>ESLint + Standard config</code> 为我们所常用的编码规范。然后接着回车就创建好了。</p> <h2 id="修改编码规范"><a href="#修改编码规范" class="header-anchor">#</a> 修改编码规范</h2> <p>添加好 standard 编码规范后，有些规范是我们不需要的，我们可以根据Eslint的配置方法在 <code>.eslintrc.js</code>文件的 rules 规则中进行配置，去除不必要的规范。如果哪些检查不合适，可以再去Eslint官网去查找添加到rules中关闭。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  root<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 从根文件开始</span>
+  env<span class="token operator">:</span> <span class="token punctuation">{</span>
+    node<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'plugin:vue/vue3-essential'</span><span class="token punctuation">,</span>
+    <span class="token string">'@vue/standard'</span> <span class="token comment">// standard风格</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  parserOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    parser<span class="token operator">:</span> <span class="token string">'@babel/eslint-parser'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// eslint配置参数</span>
+  rules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'vue/multi-word-component-names'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'off'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 是否强制组件名称多单词</span>
+    <span class="token string">'camelcase'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span> <span class="token comment">// 是否强制使用驼峰拼写法命名规定</span>
+    <span class="token string">'space-before-function-paren'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span> <span class="token comment">// 是否强制方法圆括号左边空格</span>
+    <span class="token string">'no-multiple-empty-lines'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span> <span class="token comment">// 最后一行保留一行空格</span>
+    <span class="token string">'no-console'</span><span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token string">'warn'</span> <span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span>
+    <span class="token string">'no-debugger'</span><span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token string">'warn'</span> <span class="token operator">:</span> <span class="token string">'off'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>配置好后还需要去除强制被检查的文件夹，我们可以添加 <code>.eslintignore</code> 文件进行去除。</p> <div class="language- extra-class"><pre class="language-text"><code>/node_modules/
+/public/
+/src/assets/
+/src/store/
+/src/utils/
+.vscode
+.idea
+</code></pre></div><h2 id="格式化文件"><a href="#格式化文件" class="header-anchor">#</a> 格式化文件</h2> <p>使用vscode打开项目时，可以使用Ctrl+Shift+P打开配置使用Beautify来格式化JS、CSS、HTML，但是对vue项目单文件并不有好，还有一个Vetur插件也可以用来格式化，这是打开vue项目必装的插件，右键选择格式化文档就可以对vue文件进行格式化，但是格式化的风格不符合Eslint + Standard 编码规范，我们可以通过在setting.json对Vetur格式化进行配置来达到所期望的效果。</p> <p>打开 文件-首选项-设置在最右上角有个图标打开设置json，点击打开setting.json，在里面就只可以直接编辑想要的风格。配置vetur的默认选项为prettier就可以说实现对应的格式化，不需要下载Prettier插件。如果不想在本地保存配置，可以在项目中添加 .prettierrc 文件进行配置，一般会先识别项目自带的格式化文件，然后才会使用本地的。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// setting.json</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;editor.fontSize&quot;</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+  <span class="token comment">// tab 大小为2个空格</span>
+  <span class="token property">&quot;editor.tabSize&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token comment">// 保存时格式化</span>
+  <span class="token comment">// &quot;editor.formatOnSave&quot;: true,</span>
+  <span class="token comment">// 开启 vscode 文件路径导航</span>
+  <span class="token comment">// &quot;breadcrumbs.enabled&quot;: true,</span>
+
+  <span class="token comment">// 默认使用prettier格式化支持的文件</span>
+  <span class="token property">&quot;vetur.format.defaultFormatterOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// prettier里的配置</span>
+    <span class="token property">&quot;prettier&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 结尾无分号</span>
+      <span class="token property">&quot;semi&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token comment">// 超过200个字符换行，配置html属性过多自动换行</span>
+      <span class="token property">&quot;printWidth&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+      <span class="token comment">// 使用单引号</span>
+      <span class="token property">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">// 无尾随逗号</span>
+      <span class="token property">&quot;trailingComma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 箭头函数单个参数不加分号</span>
+      <span class="token property">&quot;arrowParens&quot;</span><span class="token operator">:</span> <span class="token string">&quot;avoid&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// .prettierrc</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;semi&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;printWidth&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;trailingComma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="问题"><a href="#问题" class="header-anchor">#</a> 问题</h2> <p>1、less-loader版本过高问题</p> <p>安装预编译插件less时 <code>less-loader</code> 版本过高导致在vue.config.js中配置 less 参数 <code>javascriptEnabled</code> 编译失败。一种做法是降低版本，但是vue-cli版本过高降不成功，二是更改less配置。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> defineConfig <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@vue/cli-service'</span><span class="token punctuation">)</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">// 正常</span>
+  css<span class="token operator">:</span> <span class="token punctuation">{</span>
+    loaderOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+      less<span class="token operator">:</span> <span class="token punctuation">{</span>
+        modifyVars<span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// less vars，customize ant design theme</span>
+          <span class="token comment">// 'primary-color': '#F5222D',</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// DO NOT REMOVE THIS LINE</span>
+        javascriptEnabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 更改后</span>
+  css<span class="token operator">:</span> <span class="token punctuation">{</span>
+    loaderOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+      less<span class="token operator">:</span> <span class="token punctuation">{</span>
+        lessOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// DO NOT REMOVE THIS LINE</span>
+          javascriptEnabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          globalVars<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// less vars，customize ant design theme</span>
+            <span class="token comment">// 'primary-color': '#F5222D',</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/18/2023, 9:56:56 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xingchen/vue/vue3/vue3新内容.html" class="prev">
+        vue2.7过渡内容
+      </a></span> <span class="next"><a href="/xingchen/vue/vue3/arco-design使用.html">
+        arco-design的使用与问题
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xingchen/assets/js/app.229d2230.js" defer></script><script src="/xingchen/assets/js/2.8855fdcf.js" defer></script><script src="/xingchen/assets/js/117.2f147110.js" defer></script>
+  </body>
+</html>
