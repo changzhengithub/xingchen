@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端开发规范 | 星辰</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/xingchen/logo.ico">
+    <meta name="description" content="我的个人博客，记录点滴">
+    <link rel="preload" href="/xingchen/assets/css/0.styles.f612ea4d.css" as="style"><link rel="preload" href="/xingchen/assets/js/app.449d8865.js" as="script"><link rel="preload" href="/xingchen/assets/js/2.8855fdcf.js" as="script"><link rel="preload" href="/xingchen/assets/js/68.dc746544.js" as="script"><link rel="prefetch" href="/xingchen/assets/js/10.b3cd0e05.js"><link rel="prefetch" href="/xingchen/assets/js/100.3741cb87.js"><link rel="prefetch" href="/xingchen/assets/js/101.6184018c.js"><link rel="prefetch" href="/xingchen/assets/js/102.14bb6b74.js"><link rel="prefetch" href="/xingchen/assets/js/103.0c6bdc99.js"><link rel="prefetch" href="/xingchen/assets/js/104.4746a397.js"><link rel="prefetch" href="/xingchen/assets/js/105.7479ddb9.js"><link rel="prefetch" href="/xingchen/assets/js/106.98aa2aa6.js"><link rel="prefetch" href="/xingchen/assets/js/107.c2bccbbe.js"><link rel="prefetch" href="/xingchen/assets/js/108.f21cc836.js"><link rel="prefetch" href="/xingchen/assets/js/109.1687f56d.js"><link rel="prefetch" href="/xingchen/assets/js/11.2f5782c7.js"><link rel="prefetch" href="/xingchen/assets/js/110.a82195df.js"><link rel="prefetch" href="/xingchen/assets/js/111.335ae45d.js"><link rel="prefetch" href="/xingchen/assets/js/112.e167e5fa.js"><link rel="prefetch" href="/xingchen/assets/js/113.ddd2a386.js"><link rel="prefetch" href="/xingchen/assets/js/114.7507f5fd.js"><link rel="prefetch" href="/xingchen/assets/js/115.de39161e.js"><link rel="prefetch" href="/xingchen/assets/js/116.b5d8d732.js"><link rel="prefetch" href="/xingchen/assets/js/117.1e4eec1d.js"><link rel="prefetch" href="/xingchen/assets/js/118.902db092.js"><link rel="prefetch" href="/xingchen/assets/js/119.179aba83.js"><link rel="prefetch" href="/xingchen/assets/js/12.97522e61.js"><link rel="prefetch" href="/xingchen/assets/js/120.907d0297.js"><link rel="prefetch" href="/xingchen/assets/js/121.99f14263.js"><link rel="prefetch" href="/xingchen/assets/js/122.cc1f89a0.js"><link rel="prefetch" href="/xingchen/assets/js/123.bde28301.js"><link rel="prefetch" href="/xingchen/assets/js/124.c34f5c9b.js"><link rel="prefetch" href="/xingchen/assets/js/125.ac8d24bd.js"><link rel="prefetch" href="/xingchen/assets/js/126.e623cfae.js"><link rel="prefetch" href="/xingchen/assets/js/127.6d11459b.js"><link rel="prefetch" href="/xingchen/assets/js/128.6497a86d.js"><link rel="prefetch" href="/xingchen/assets/js/129.226db5ee.js"><link rel="prefetch" href="/xingchen/assets/js/13.da1a3f07.js"><link rel="prefetch" href="/xingchen/assets/js/130.b5942383.js"><link rel="prefetch" href="/xingchen/assets/js/131.6210e5d7.js"><link rel="prefetch" href="/xingchen/assets/js/132.2f58b017.js"><link rel="prefetch" href="/xingchen/assets/js/133.a181a359.js"><link rel="prefetch" href="/xingchen/assets/js/14.fe4a33bb.js"><link rel="prefetch" href="/xingchen/assets/js/15.21d4eaca.js"><link rel="prefetch" href="/xingchen/assets/js/16.c853a137.js"><link rel="prefetch" href="/xingchen/assets/js/17.61b0cfbc.js"><link rel="prefetch" href="/xingchen/assets/js/18.aa314438.js"><link rel="prefetch" href="/xingchen/assets/js/19.02f62302.js"><link rel="prefetch" href="/xingchen/assets/js/20.23447ef3.js"><link rel="prefetch" href="/xingchen/assets/js/21.6dc9d8aa.js"><link rel="prefetch" href="/xingchen/assets/js/22.9ed9c6b6.js"><link rel="prefetch" href="/xingchen/assets/js/23.aee134c7.js"><link rel="prefetch" href="/xingchen/assets/js/24.5f61fcba.js"><link rel="prefetch" href="/xingchen/assets/js/25.62a742ce.js"><link rel="prefetch" href="/xingchen/assets/js/26.50ba4ab0.js"><link rel="prefetch" href="/xingchen/assets/js/27.ee91407e.js"><link rel="prefetch" href="/xingchen/assets/js/28.f8a736c7.js"><link rel="prefetch" href="/xingchen/assets/js/29.644e5cfa.js"><link rel="prefetch" href="/xingchen/assets/js/3.1555e676.js"><link rel="prefetch" href="/xingchen/assets/js/30.20572658.js"><link rel="prefetch" href="/xingchen/assets/js/31.4a21df99.js"><link rel="prefetch" href="/xingchen/assets/js/32.4290759a.js"><link rel="prefetch" href="/xingchen/assets/js/33.ed107e36.js"><link rel="prefetch" href="/xingchen/assets/js/34.454a6db9.js"><link rel="prefetch" href="/xingchen/assets/js/35.d58a959c.js"><link rel="prefetch" href="/xingchen/assets/js/36.a5242abf.js"><link rel="prefetch" href="/xingchen/assets/js/37.34c31688.js"><link rel="prefetch" href="/xingchen/assets/js/38.06c23d26.js"><link rel="prefetch" href="/xingchen/assets/js/39.1b167583.js"><link rel="prefetch" href="/xingchen/assets/js/4.79e3ce3d.js"><link rel="prefetch" href="/xingchen/assets/js/40.44f8b6c1.js"><link rel="prefetch" href="/xingchen/assets/js/41.36198171.js"><link rel="prefetch" href="/xingchen/assets/js/42.f62d7e38.js"><link rel="prefetch" href="/xingchen/assets/js/43.7302ee5b.js"><link rel="prefetch" href="/xingchen/assets/js/44.58849855.js"><link rel="prefetch" href="/xingchen/assets/js/45.16042e59.js"><link rel="prefetch" href="/xingchen/assets/js/46.4b531a07.js"><link rel="prefetch" href="/xingchen/assets/js/47.5731f90a.js"><link rel="prefetch" href="/xingchen/assets/js/48.cc52bb32.js"><link rel="prefetch" href="/xingchen/assets/js/49.086fa434.js"><link rel="prefetch" href="/xingchen/assets/js/5.e376ddbc.js"><link rel="prefetch" href="/xingchen/assets/js/50.f1e432ed.js"><link rel="prefetch" href="/xingchen/assets/js/51.054e8894.js"><link rel="prefetch" href="/xingchen/assets/js/52.73243566.js"><link rel="prefetch" href="/xingchen/assets/js/53.ec587e14.js"><link rel="prefetch" href="/xingchen/assets/js/54.9d13b841.js"><link rel="prefetch" href="/xingchen/assets/js/55.e8a45a0d.js"><link rel="prefetch" href="/xingchen/assets/js/56.e8c41e5a.js"><link rel="prefetch" href="/xingchen/assets/js/57.3d587386.js"><link rel="prefetch" href="/xingchen/assets/js/58.3c0431c0.js"><link rel="prefetch" href="/xingchen/assets/js/59.fbbe3a3c.js"><link rel="prefetch" href="/xingchen/assets/js/6.2acbb0fe.js"><link rel="prefetch" href="/xingchen/assets/js/60.913bd050.js"><link rel="prefetch" href="/xingchen/assets/js/61.4451b098.js"><link rel="prefetch" href="/xingchen/assets/js/62.9c21f238.js"><link rel="prefetch" href="/xingchen/assets/js/63.d595348f.js"><link rel="prefetch" href="/xingchen/assets/js/64.40d7f182.js"><link rel="prefetch" href="/xingchen/assets/js/65.aca69de2.js"><link rel="prefetch" href="/xingchen/assets/js/66.2f47dc61.js"><link rel="prefetch" href="/xingchen/assets/js/67.5bb32134.js"><link rel="prefetch" href="/xingchen/assets/js/69.ec6e378a.js"><link rel="prefetch" href="/xingchen/assets/js/7.ad96cf3d.js"><link rel="prefetch" href="/xingchen/assets/js/70.1487e5a4.js"><link rel="prefetch" href="/xingchen/assets/js/71.54f10fae.js"><link rel="prefetch" href="/xingchen/assets/js/72.4abbeb3a.js"><link rel="prefetch" href="/xingchen/assets/js/73.412453cd.js"><link rel="prefetch" href="/xingchen/assets/js/74.d59e54c8.js"><link rel="prefetch" href="/xingchen/assets/js/75.95aa15cd.js"><link rel="prefetch" href="/xingchen/assets/js/76.6bc08d1b.js"><link rel="prefetch" href="/xingchen/assets/js/77.e5a81fab.js"><link rel="prefetch" href="/xingchen/assets/js/78.e4f8a0f4.js"><link rel="prefetch" href="/xingchen/assets/js/79.c86f7809.js"><link rel="prefetch" href="/xingchen/assets/js/8.356c890e.js"><link rel="prefetch" href="/xingchen/assets/js/80.c29cb623.js"><link rel="prefetch" href="/xingchen/assets/js/81.d9e7557b.js"><link rel="prefetch" href="/xingchen/assets/js/82.e8b75549.js"><link rel="prefetch" href="/xingchen/assets/js/83.ab193500.js"><link rel="prefetch" href="/xingchen/assets/js/84.0f2efcc1.js"><link rel="prefetch" href="/xingchen/assets/js/85.777a5ec7.js"><link rel="prefetch" href="/xingchen/assets/js/86.6ca64de5.js"><link rel="prefetch" href="/xingchen/assets/js/87.6c534565.js"><link rel="prefetch" href="/xingchen/assets/js/88.bf00aea8.js"><link rel="prefetch" href="/xingchen/assets/js/89.bd555073.js"><link rel="prefetch" href="/xingchen/assets/js/9.b12d7370.js"><link rel="prefetch" href="/xingchen/assets/js/90.3b28725f.js"><link rel="prefetch" href="/xingchen/assets/js/91.acfcb3ea.js"><link rel="prefetch" href="/xingchen/assets/js/92.abb2a987.js"><link rel="prefetch" href="/xingchen/assets/js/93.d98f43b1.js"><link rel="prefetch" href="/xingchen/assets/js/94.6857c864.js"><link rel="prefetch" href="/xingchen/assets/js/95.de0d7fbb.js"><link rel="prefetch" href="/xingchen/assets/js/96.1dea2317.js"><link rel="prefetch" href="/xingchen/assets/js/97.4a47703b.js"><link rel="prefetch" href="/xingchen/assets/js/98.ab44542d.js"><link rel="prefetch" href="/xingchen/assets/js/99.0a58f911.js">
+    <link rel="stylesheet" href="/xingchen/assets/css/0.styles.f612ea4d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xingchen/" class="home-link router-link-active"><!----> <span class="site-name">星辰</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/basic/css/字体设置.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/javascript/基础问题.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/es6/基础内容.html" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue3/基础内容.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue2/基础内容.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/router/vue路由.html" class="nav-link">
+  Router
+</a></li></ul></div></div><div class="nav-item"><a href="/xingchen/typescript/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/xingchen/canvas/" class="nav-link">
+  Canvas
+</a></div><div class="nav-item"><a href="/xingchen/videos/" class="nav-link">
+  Video
+</a></div><div class="nav-item"><a href="/xingchen/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/xingchen/mobile/" class="nav-link">
+  移动端
+</a></div><div class="nav-item"><a href="/xingchen/guide/" class="nav-link router-link-active">
+  开发规范
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link">
+  其他分类
+</a></div><div class="nav-item"><a href="https://github.com/changzhengithub/xingchen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/basic/css/字体设置.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/javascript/基础问题.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/es6/基础内容.html" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue3/基础内容.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue2/基础内容.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/router/vue路由.html" class="nav-link">
+  Router
+</a></li></ul></div></div><div class="nav-item"><a href="/xingchen/typescript/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/xingchen/canvas/" class="nav-link">
+  Canvas
+</a></div><div class="nav-item"><a href="/xingchen/videos/" class="nav-link">
+  Video
+</a></div><div class="nav-item"><a href="/xingchen/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/xingchen/mobile/" class="nav-link">
+  移动端
+</a></div><div class="nav-item"><a href="/xingchen/guide/" class="nav-link router-link-active">
+  开发规范
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link">
+  其他分类
+</a></div><div class="nav-item"><a href="https://github.com/changzhengithub/xingchen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>开发规范指南</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/xingchen/guide/前端开发规范.html" class="active sidebar-link">前端开发规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/xingchen/guide/前端开发规范.html#一、html-规范" class="sidebar-link">一、HTML 规范</a></li><li class="sidebar-sub-header"><a href="/xingchen/guide/前端开发规范.html#二、css-规范" class="sidebar-link">二、CSS 规范</a></li><li class="sidebar-sub-header"><a href="/xingchen/guide/前端开发规范.html#三、图片规范" class="sidebar-link">三、图片规范</a></li><li class="sidebar-sub-header"><a href="/xingchen/guide/前端开发规范.html#四、javascript-规范" class="sidebar-link">四、Javascript 规范</a></li><li class="sidebar-sub-header"><a href="/xingchen/guide/前端开发规范.html#五、vue-项目规范" class="sidebar-link">五、Vue 项目规范</a></li><li class="sidebar-sub-header"><a href="/xingchen/guide/前端开发规范.html#六、vue-编码规范" class="sidebar-link">六、Vue 编码规范</a></li><li class="sidebar-sub-header"><a href="/xingchen/guide/前端开发规范.html#七、git-开发规范" class="sidebar-link">七、Git 开发规范</a></li><li class="sidebar-sub-header"><a href="/xingchen/guide/前端开发规范.html#附-函数方法常用动词" class="sidebar-link">附：函数方法常用动词</a></li></ul></li><li><a href="/xingchen/guide/CSS书写规范.html" class="sidebar-link">CSS书写规范</a></li><li><a href="/xingchen/guide/Git开发规范.html" class="sidebar-link">Git开发规范</a></li><li><a href="/xingchen/guide/前端技能掌握梳理.html" class="sidebar-link">前端技能掌握梳理</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="前端开发规范"><a href="#前端开发规范" class="header-anchor">#</a> 前端开发规范</h1> <p>开发规范的制定，可以降低新成员的融入成本，提高团队协作效率和开发效率，降低沟通成本。实现高度统一的代码风格，也有利于提高代码的可维护性。后面还要在实践中提高各种开发逻辑，业务处理方式的规范，制定标准的、模块化的知识输出点，快速的拿来即用，加强团队的知识沉淀。</p> <p>本组前端团队主要是以 Vue2 技术栈为基础，其他还涉及到小程序、移动端页面、uniApp 等技术，以及以 Vue 为基础的 UI 框架，像 Element UI、Ant Design UI 这些，所以小程序和这些常见的 UI 框架基础的知识点都要有所掌握，并在开发中进行熟练的使用。有时候在拓展新的业务还要对一些新的技术进行尝试，所以在保证基础的知识熟练后，还要积极涉猎新技术拓宽自己的技术栈。</p> <p>下面是本团队成员要遵守的一些规范，这些规范可能会和你平时的习惯有所不同，请仔细阅读该规范，严格遵守，快速熟悉融入到团队之间的协作中。</p> <h2 id="一、html-规范"><a href="#一、html-规范" class="header-anchor">#</a> 一、HTML 规范</h2> <p>基础的 HTML 语法规范几乎是所有前端都要熟知的，下面列出几点，其他不做赘述。</p> <ul><li>标签必须合法且闭合、嵌套正确，标签名需小写</li> <li>标签语法无错误，优先使用语义化标签</li> <li>除非有特定的功能、组件要求等，禁止随意使用 id 来定义元素样式</li> <li>a 标签和 img 标签最好加上 title 和 alt 进行说明</li></ul> <h2 id="二、css-规范"><a href="#二、css-规范" class="header-anchor">#</a> 二、CSS 规范</h2> <p>请仔细阅读该规范</p> <p><a href="/xingchen/guide/CSS书写规范.html">CSS 书写规范</a></p> <h2 id="三、图片规范"><a href="#三、图片规范" class="header-anchor">#</a> 三、图片规范</h2> <ul><li>图片名称使用 <code>kebab-case</code> 规范命名，禁止使用特殊字符、中文</li> <li>图片大小最好 不超过 300kb</li> <li>命名需要能体现图片的大概用途
+示例：</li></ul> <div class="language-plain extra-class"><pre class="language-text"><code> bg.jpg          //背景图片
+ banner.jpg      //banner 图
+ sprites.png     //精灵图
+ btn-icon.jpg    // 按钮图标
+ avatar-badge.png // 头像徽标
+</code></pre></div><h2 id="四、javascript-规范"><a href="#四、javascript-规范" class="header-anchor">#</a> 四、Javascript 规范</h2> <h3 id="_1、命名规范"><a href="#_1、命名规范" class="header-anchor">#</a> 1、命名规范</h3> <p><strong>变量命名</strong></p> <p>全局变量、局部变量、参数名、统一采用 <code>kebabCase</code> 小驼峰格式命名变量。</p> <p>不要使用下划线和特殊字符。</p> <p>命名变量时前面可以加一些前缀来进行区别，比如 is/has/can 等。</p> <p>常见的表示进行中、状态类的变量：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;isShow&quot;</span><span class="token operator">:</span> <span class="token string">&quot;是否显示&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isRunning&quot;</span><span class="token operator">:</span> <span class="token string">&quot;正在运行中&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;hasUser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;是否包含用户&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;canRead&quot;</span><span class="token operator">:</span> <span class="token string">&quot;是否可读&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>其他常见属性状态类：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token punctuation">{</span>
+  disabled: <span class="token string">'是否禁用'</span>,
+  editable: <span class="token string">'是否可编辑'</span>,
+  clearable: <span class="token string">'是否可清除'</span>,
+  readonly: <span class="token string">'只读'</span>,
+  expandable: <span class="token string">'是否可展开'</span>,
+  checked: <span class="token string">'是否选中'</span>,
+  enumberable: <span class="token string">'是否可枚举'</span>,
+  iterable: <span class="token string">'是否可迭代'</span>,
+  clickable: <span class="token string">'是否可点击'</span>,
+  draggable: <span class="token string">'是否可拖拽'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>函数命名</strong></p> <p>函数命名也使用 <code>kebabCase</code> 小驼峰写法。</p> <p>必须采用 动词+名词 来进行命名，比如：getUserList、setUserName。</p> <p>常见的增删改查统一使用 add/ delete / update / get 这几个单词。</p> <p><strong>常量命名</strong></p> <p>常量命名全部大写，单词间用下划线隔开，力求语义表达完整清楚，不要嫌名字长。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token constant">MAX_STOCK_COUNT</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token constant">BASE_URL</span> <span class="token operator">=</span> <span class="token string">&quot;http://www.baidu.com&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_2、书写规范"><a href="#_2、书写规范" class="header-anchor">#</a> 2、书写规范</h3> <p>1、优先使用 ES6 中新增的语法糖和函数。</p> <p>2、在 js 中统一使用单引号，不要使用双引号。</p> <p>3、在进行比较判断时尽量使用全等 === 来进行判断。</p> <p>4、当有使用对象的对象参数多余 2 个时使用解构赋值来取值。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> sex <span class="token punctuation">}</span> <span class="token operator">=</span> userInfo<span class="token punctuation">;</span>
+</code></pre></div><p>5、条件判断
+能使用三目运算符和逻辑运算符解决的，就不要使用条件判断，但是不要写太长的三目运算符。如果超过 3 层请使用 switch/case 或者抽成函数。</p> <p>如果单条 if 判断可以直接省略大括号。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>str <span class="token operator">===</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">)</span> isShow <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+</code></pre></div><p>6、改变 this 指向转换命名只能使用 that</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> that <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+</code></pre></div><p>7、不同逻辑、不同语义、不同业务的代码之间插入一个空行分隔开来以提升可读性。</p> <h2 id="五、vue-项目规范"><a href="#五、vue-项目规范" class="header-anchor">#</a> 五、Vue 项目规范</h2> <p>vue 代码使用 Eslint 和 prettierrc 进行代码格式检查和格式化，请严格遵守该规范。</p> <h3 id="_1、项目构建"><a href="#_1、项目构建" class="header-anchor">#</a> 1、项目构建</h3> <p>构建 vue 项目使用 vue-cli3 来初始化项目，如果使用 Element 或者 Ant UI 插件的后台模板的话也基本上是 vue-cli3 搭建的。</p> <h3 id="_2、项目目录"><a href="#_2、项目目录" class="header-anchor">#</a> 2、项目目录</h3> <p>在自己搭建 vue 项目时，按照下面基础目录格式进行搭建，如果有额外的目录在进行讨论使用什么目录来进行存放。</p> <ul><li>所有的静态资源，比如图片，字体包、公共样式文件都放在 assets 文件夹下面，避免在 views 的每个目录中放图片。</li> <li>api 目录存放每个业务页面对应的 api 请求接口。</li> <li>utils 用来放一些工具类、轮子等 js 文件，比如常用的公共函数，时间过滤、正则验证、axios 封装、地址数据等。</li> <li>components 只存放项目公共组件，业务页面自己的组件放在其对应的 components 文件夹下。</li> <li>layouts 下存放页面基础的布局。</li> <li>如果要单独拆分业务页面的 js、css，要创建和 views 里一 一 对应的文件目录，文件命名也一样，避免都放在一起混淆。</li></ul> <div class="language-plain extra-class"><pre class="language-text"><code>├── public
+│   └── logo.png             # LOGO
+|   └── index.html           # Vue 入口模板
+├── src
+│   ├── api                  # Api ajax 等
+│   ├── assets               # 本地静态资源
+│   │   ├── images           # 项目图片
+│   │   ├── css              # reset、common样式
+│   │   ├── font             # 字体库、iconfont库
+│   │   └── less/sass        # 公共less/sass文件
+│   ├── components           # 业务公共组件
+│   ├── layouts              # 基础布局
+│   ├── router               # Vue-Router
+│   ├── store                # Vuex
+│   ├── utils                # 工具库
+│   ├── views                # 业务页面入口和常用模板
+│   ├── App.vue              # Vue 模板入口
+│   └── main.js              # Vue 入口 JS
+├── tests                    # 测试工具
+├── README.md
+└── package.json
+</code></pre></div><h3 id="_3、文件、组件规范"><a href="#_3、文件、组件规范" class="header-anchor">#</a> 3、文件、组件规范</h3> <p>在目录文件中文件夹以 <code>kebab-case</code> 格式命名，除了 index.vue 文件外其他 vue 组件均以 <code>KebabCase</code> 格式命名。</p> <p>每个业务页面使用一个单独的文件（根据项目规模，如果后续规模大，模块多，每个业务页面统一放在一个大模块下）。</p> <p>每个业务页面文件里是当前页面的 index.vue 文件和抽出来的组件，提取的组件放在当前文件下的 components 目录里。</p> <p>组件命名最好不低于两个单词，防止和 HTML 标签混淆。</p> <p>多于两个地方使用的组件，提取出来封装成公共组件放在公共的 components 文件里。</p> <p>公共组件全部使用 <code>KebabCase</code> 大驼峰来命名，单词开头字母全部大写。</p> <p>注意：特殊要求</p> <p>引入组件时也全部使用大写，不要使用默认的 <code>kebab-case</code> 方法自动生成。</p> <p>参考：<a href="https://cn.vuejs.org/v2/style-guide" target="_blank" rel="noopener noreferrer">Vue 风格指南<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="_4、组件选项顺序"><a href="#_4、组件选项顺序" class="header-anchor">#</a> 4、组件选项顺序</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 组件名要大写</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  directives<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mixins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  watch<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">created</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">beforeDestroy</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_5、属性排列顺序"><a href="#_5、属性排列顺序" class="header-anchor">#</a> 5、属性排列顺序</h3> <p>在 HTML 标签上属性要按照一定顺序排列，class 类名要放最前面，双向绑定 v-model 和 v-if 也放前面，事件@放在最后面。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span>
+<span class="token class-name">ref</span>
+v<span class="token operator">-</span>model
+v<span class="token operator">-</span><span class="token keyword">if</span>、v<span class="token operator">-</span>show
+is
+v<span class="token operator">-</span><span class="token keyword">for</span>
+key
+v<span class="token operator">-</span>bind
+v<span class="token operator">-</span>html、v<span class="token operator">-</span>text
+v<span class="token operator">-</span>on
+</code></pre></div><h3 id="_6、props-传值"><a href="#_6、props-传值" class="header-anchor">#</a> 6、props 传值</h3> <p>声明 props 传值要尽量详细</p> <div class="language-plain extra-class"><pre class="language-text"><code>- 必须使用 camelCase 小驼峰命名，模板中始终使用 kebab-case
+- 必须加上注释，表明其含义
+- 必须指定类型
+- 必须加上 required 或者 default，两者二选其一
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>baseUser</span> <span class="token attr-name">user-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>12<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>baseUser</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 用户id 进行获取用户列表</span>
+    userId<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Number<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="_7、自定义事件约束"><a href="#_7、自定义事件约束" class="header-anchor">#</a> 7、自定义事件约束</h3> <p>使用自定义事件在子组件向父组件传递或者中央事件主线进行传递时，自定义事件命名统一使用全部大写+下划线进行连接，命名和普通函数一样，但要以 _EVENT 来结尾，以区分普通函数。事件传值如果是多个值统一放在一个对象进行传递。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 子组件 baseUser</span>
+<span class="token keyword">const</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'zhangsan'</span><span class="token punctuation">,</span>
+  age<span class="token operator">:</span> <span class="token number">18</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'GET_CUSTOM_USER_EVENT'</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span>
+
+<span class="token comment">// 父组件</span>
+<span class="token operator">&lt;</span>baseUser @<span class="token constant">GET_CUSTOM_USER_EVENT</span><span class="token operator">=</span><span class="token string">&quot;getCustomUser&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>baseUser<span class="token operator">&gt;</span>
+
+<span class="token function">getCustomUser</span> <span class="token punctuation">(</span><span class="token parameter">user</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>使用中央事件进行事件传递时，接收到事件，在组件销毁时需要进行清除。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 组件baseA</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$bus<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'LISTEN_NAV_ENVET'</span><span class="token punctuation">)</span>
+<span class="token comment">// 组件baseB</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$bus<span class="token punctuation">.</span><span class="token function">$on</span><span class="token punctuation">(</span><span class="token string">'LISTEN_NAV_ENVET'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// 组件销毁时进行清除</span>
+<span class="token function">destroyed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>$bus<span class="token punctuation">.</span><span class="token function">$off</span><span class="token punctuation">(</span><span class="token string">'LISTEN_NAV_ENVET'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h3 id="_8、样式"><a href="#_8、样式" class="header-anchor">#</a> 8、样式</h3> <p>vue 一般使用预编译 less 或 sass，公共样式单独提取出来然后直接在 css 中进行混入引用。要给每个组件设置作用域 scoped，更改 UI 组件默认样式使用 deep。</p> <h3 id="_9、声明周期"><a href="#_9、声明周期" class="header-anchor">#</a> 9、声明周期</h3> <p>获取数据都在 created 周期函数中获取。</p> <h3 id="_10、属性换行"><a href="#_10、属性换行" class="header-anchor">#</a> 10、属性换行</h3> <p>属性换行，一般不建议换行，除非属性特别多行特别长才考虑换行。换行要使用缩进进行对齐。</p> <h3 id="_11、vuex-使用"><a href="#_11、vuex-使用" class="header-anchor">#</a> 11、vuex 使用</h3> <p>store 要按照不同业务进行拆分不同的模块。</p> <p>主要使用 mutation，在 mutation 只进行对 state 数据的更新，不做其他业务的处理。</p> <p>action 涉及到异步数据处理，除处理登录权限使用外，其他模块尽量不使用。</p> <p>在组件中使用都要通过辅助函数 mapState/mapMutations/mapGetters/mapActions 来获取和设置。</p> <p>其他暂不做过多要求。</p> <div class="language-plain extra-class"><pre class="language-text"><code>├── index.js
+├── modules
+│   ├── user.js                 # 用户模块
+│   └── product.js              # 商品模块
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// index.js</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> user <span class="token keyword">from</span> <span class="token string">&quot;./modules/app&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> product <span class="token keyword">from</span> <span class="token string">&quot;./modules/product&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    user<span class="token punctuation">,</span>
+    product<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @name 用户管理
+ * @author changz
+ */</span>
+<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token punctuation">{</span>
+  state<span class="token operator">:</span> <span class="token punctuation">{</span>
+    userId<span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 用户id</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 设置用户id</span>
+    <span class="token function">getUserId</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> userId</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>userId <span class="token operator">=</span> userId<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> user<span class="token punctuation">;</span>
+</code></pre></div><h3 id="_12、路由使用"><a href="#_12、路由使用" class="header-anchor">#</a> 12、路由使用</h3> <p>路由配置</p> <ul><li>path 使用<code>kebab-case</code>命名规范进行命名，不要出现大写命名</li> <li>name 和 component 使用 <code>KebabCase</code> 命名规范命名，和组件内 name 相对应</li> <li>添加路由使用懒加载机制</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 先引入组件</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token comment">/* webpackChunkName: &quot;home&quot; */</span> <span class="token string">&quot;@/views/home&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Shop</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token comment">/* webpackChunkName: &quot;shop&quot; */</span> <span class="token string">&quot;@/views/shop&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">ShopDetail</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+  <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token comment">/* webpackChunkName: &quot;shop-detail&quot; */</span> <span class="token string">&quot;@/views/shop-detail&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 路由配置</span>
+routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;Home&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> Home<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/shop&quot;</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;Shop&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> Shop<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/shop/:id&quot;</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;ShopDetail&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> ShopDetail<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>页面跳转统一使用 name 进行跳转，传参使用 params 和 query 进行传参</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;Shop&quot;</span><span class="token punctuation">,</span>
+  query<span class="token operator">:</span> <span class="token punctuation">{</span>
+    shopId<span class="token operator">:</span> shopId<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 动态路由</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;ShopDetail&quot;</span><span class="token punctuation">,</span>
+  params<span class="token operator">:</span> id<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id=""><a href="#" class="header-anchor">#</a></h3> <h3 id="_13、注释"><a href="#_13、注释" class="header-anchor">#</a> 13、注释</h3> <p>必须要加注释的地方</p> <div class="language-plain extra-class"><pre class="language-text"><code>- 所有的文件必须加注释说明用意
+- store 中的 state, mutation, action 等必须加注释
+- vue 文件中的 template 必须加注释，若文件较大添加 start end 注释
+- vue 文件的 methods，每个 method 必须添加注释
+- vue 文件的 data, 非常见单词要加注释
+- 公共组件使用说明
+</code></pre></div><p>文件注释：</p> <p>每个文件都要注释是干什么的，使用多行注释，js 文件在最上面注释，.vue 文件放在 script 里进行注释。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @desc 员工详情
+ * @author changz
+ * */</span>
+</code></pre></div><p>变量和函数注释：</p> <p>每个变量都要注释，每个函数也要加注释，函数注释可以使用单行注释和多行注释。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'User'</span><span class="token punctuation">,</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 筛选信息</span>
+      filterInfo<span class="token operator">:</span> <span class="token punctuation">{</span>
+        title<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 标题</span>
+        id<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 用户id</span>
+      <span class="token punctuation">}</span>
+      name<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 姓名</span>
+
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 添加用户</span>
+      <span class="token function">addUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">/**
+       * @desc 删除用户
+       * @param id 用户id
+       * @author changz
+       * */</span>
+      <span class="token function">deleteUser</span><span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>组件注释：</p> <p>公共用的组件要封装成公共组件，组件名称单词要大写开头，注释要写详细，每个出入的参数都要注明意思和使用说明，使人一眼就能明白该组件是干什么的，是如何用的。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * 组件名称
+ * @desc 组件描述
+ * @author 组件作者
+ * @param {Object} [title] - 参数说明
+ * @param {String} [columns] - 参数说明
+ * @example 调用示例
+ * &lt;hbTable :title=&quot;title&quot; :columns=&quot;columns&quot; :table-data=&quot;tableData&quot;&gt;&lt;/hbTable&gt;
+ */</span>
+</code></pre></div><h2 id="六、vue-编码规范"><a href="#六、vue-编码规范" class="header-anchor">#</a> 六、Vue 编码规范</h2> <p>常见的 js 编码规范：<a href="https://standardjs.com/readme-zhcn.html#why-should-i-use-javascript-standard-style" target="_blank" rel="noopener noreferrer">JavaScript Standard Style<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、<a href="https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fairbnb%2Fjavascript" target="_blank" rel="noopener noreferrer">Airbnb JavaScript Style Guide<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>在 vue 中实现这些规范，没什么不好，能更简洁和快速的进行开发，并让代码有一个良好的统一格式。所以我们在 vue 中统一使用这些规范。</p> <p>vue 创建项目会有默认的 Eslint 选项，我们选择 Eslint + standard 进行规范编码格式。格式化文档可以创建.prettierrc 文件来配置，配置出符合 Eslint + standard 的风格。</p> <p>格式注意：</p> <ul><li>使用 2 个空格进行缩进</li> <li>字符串统一使用单引号 'abc'</li> <li>无分号</li> <li>关键字后加空格(if else)</li> <li>函数名后加空格</li> <li>字符串拼接操作符之间要留空格</li> <li>各种操作符之间要留有空格</li> <li>逗号后面加空格(对象，数组，参数，解构)</li> <li>不允许有多余的行末逗号</li> <li>键值对当中冒号与值之间要留空白</li> <li>单行注释首尾留空格</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'zhangsan'</span><span class="token punctuation">,</span> <span class="token comment">// 姓名</span>
+  userList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'zhangsan'</span><span class="token punctuation">,</span> <span class="token string">'lisi'</span><span class="token punctuation">,</span> <span class="token string">'wangwu'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  userInfo<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    id<span class="token operator">:</span> <span class="token number">18</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  grade<span class="token operator">:</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">13</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token function">getUser</span><span class="token punctuation">(</span><span class="token parameter">userId<span class="token punctuation">,</span> userName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> id <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>userInfo
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>userName <span class="token operator">===</span> <span class="token string">'lisi'</span> <span class="token operator">||</span> userId <span class="token operator">===</span> id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">111</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">222</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>配置 Eslint：
+代码检查中不是所有的都是我们需要的，可以通过配置.eslintrc.js 文件来去除不需要的代码检查。参考链接：<a href="https://eslint.bootcss.com" target="_blank" rel="noopener noreferrer">Eslint<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .eslintrc.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  root<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  env<span class="token operator">:</span> <span class="token punctuation">{</span>
+    node<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;plugin:vue/essential&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;@vue/standard&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  parserOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    parser<span class="token operator">:</span> <span class="token string">&quot;@babel/eslint-parser&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  rules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;vue/multi-word-component-names&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;off&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 是否强制组件名称多单词</span>
+    camelcase<span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 是否强制使用驼峰拼写法命名规定</span>
+    <span class="token string">&quot;space-before-function-paren&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 是否强制方法圆括号左边空格</span>
+    <span class="token string">&quot;no-multiple-empty-lines&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 不允许多个空行</span>
+    <span class="token string">&quot;new-cap&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 构造函数名首字母大写</span>
+    <span class="token string">&quot;eol-last&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 要求或禁止文件末尾存在空行</span>
+    <span class="token string">&quot;dot-notation&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 允许不使用点表示写法</span>
+    <span class="token string">&quot;vue/no-mutating-props&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;off&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 关闭Vue不能修改props警告</span>
+    <span class="token string">&quot;no-console&quot;</span><span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">&quot;production&quot;</span> <span class="token operator">?</span> <span class="token string">&quot;warn&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;no-debugger&quot;</span><span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">&quot;production&quot;</span> <span class="token operator">?</span> <span class="token string">&quot;warn&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>配置代码格式化：</p> <p>使用 prettier 来格式我们的代码，配置符合 Eslint + standard 风格的代码，如果项目中有.prettierrc 文件，则格式化先以项目中的该文件为准。</p> <p>参考链接：<a href="https://prettier.io" target="_blank" rel="noopener noreferrer">Prettier<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>在项目中创建.prettierrc 文件配置参数。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// .prettierrc</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;semi&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 结尾无分号</span>
+  <span class="token property">&quot;printWidth&quot;</span><span class="token operator">:</span> <span class="token number">180</span><span class="token punctuation">,</span> <span class="token comment">// 超过n个字符换行</span>
+  <span class="token property">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 使用单引号</span>
+  <span class="token property">&quot;quoteProps&quot;</span><span class="token operator">:</span> <span class="token string">&quot;preserve&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;trailingComma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 无尾随逗号</span>
+  <span class="token property">&quot;arrowParens&quot;</span><span class="token operator">:</span> <span class="token string">&quot;avoid&quot;</span> <span class="token comment">// 箭头函数单个参数不加分号</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="七、git-开发规范"><a href="#七、git-开发规范" class="header-anchor">#</a> 七、Git 开发规范</h2> <p>仓库管理地址：<a href="http://git.vuln.yunsee.cn/" target="_blank" rel="noopener noreferrer">http://git.vuln.yunsee.cn/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 要先配置 hosts 才能访问。</p> <p>管理员统一分配账号，获取账号进行登录，查看自己的项目。</p> <p>熟悉下面 Git 开发规范执行流程并严格执行。</p> <p><a href="/xingchen/guide/Git开发规范.html">Git 开发规范</a></p> <h2 id="附-函数方法常用动词"><a href="#附-函数方法常用动词" class="header-anchor">#</a> 附：函数方法常用动词</h2> <div class="language-plain extra-class"><pre class="language-text"><code>get 获取/set 设置,
+add 增加/remove 删除,
+create 创建/destory 移除,
+format 格式化/query 查询
+start 启动/stop 停止,
+open 打开/close 关闭,
+read 读取/write 写入,
+load 载入/save 保存,
+create 创建/destroy 销毁,
+begin 开始/end 结束,
+backup 备份/restore 恢复,
+import 导入/export 导出,
+split 分割/merge 合并,
+inject 注入/extract 提取,
+attach 附着/detach 脱离,
+bind 绑定/separate 分离,
+view 查看/browse 浏览,
+edit 编辑/modify 修改,
+select 选取/mark 标记,
+copy 复制/paste 粘贴,
+undo 撤销/redo 重做,
+insert 插入/delete 移除,
+add 加入/append 添加,
+clean 清理/clear 清除,
+index 索引/sort 排序,
+find 查找/search 搜索,
+increase 增加/decrease 减少,
+play 播放/pause 暂停,
+launch 启动/run 运行
+compile 编译/execute 执行,
+debug 调试/trace 跟踪,
+observe 观察/listen 监听,
+build 构建/publish 发布,
+input 输入/output 输出,
+encode 编码/decode 解码,
+encrypt 加密/decrypt 解密,
+compress 压缩/decompress 解压缩,
+pack 打包/unpack 解包,
+parse 解析/emit 生成,
+connect 连接/disconnect 断开,
+send 发送/receive 接收,
+download 下载/upload 上传,
+refresh 刷新/synchronize 同步,
+update 更新/revert 复原,
+lock 锁定/unlock 解锁,
+check out 签出/check in 签入,
+submit 提交/commit 交付,
+push 推/pull 拉,
+expand 展开/collapse 折叠,
+begin 起始/end 结束,
+start 开始/finish 完成,
+enter 进入/exit 退出,
+abort 放弃/quit 离开,
+obsolete 废弃/depreciate 废旧,
+collect 收集/aggregate 聚集
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/xingchen/guide/CSS书写规范.html">
+        CSS书写规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xingchen/assets/js/app.449d8865.js" defer></script><script src="/xingchen/assets/js/2.8855fdcf.js" defer></script><script src="/xingchen/assets/js/68.dc746544.js" defer></script>
+  </body>
+</html>

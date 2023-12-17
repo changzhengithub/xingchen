@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>搭建Vue工程化项目 | 星辰</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/xingchen/logo.ico">
+    <meta name="description" content="我的个人博客，记录点滴">
+    <link rel="preload" href="/xingchen/assets/css/0.styles.f612ea4d.css" as="style"><link rel="preload" href="/xingchen/assets/js/app.449d8865.js" as="script"><link rel="preload" href="/xingchen/assets/js/2.8855fdcf.js" as="script"><link rel="preload" href="/xingchen/assets/js/126.e623cfae.js" as="script"><link rel="prefetch" href="/xingchen/assets/js/10.b3cd0e05.js"><link rel="prefetch" href="/xingchen/assets/js/100.3741cb87.js"><link rel="prefetch" href="/xingchen/assets/js/101.6184018c.js"><link rel="prefetch" href="/xingchen/assets/js/102.14bb6b74.js"><link rel="prefetch" href="/xingchen/assets/js/103.0c6bdc99.js"><link rel="prefetch" href="/xingchen/assets/js/104.4746a397.js"><link rel="prefetch" href="/xingchen/assets/js/105.7479ddb9.js"><link rel="prefetch" href="/xingchen/assets/js/106.98aa2aa6.js"><link rel="prefetch" href="/xingchen/assets/js/107.c2bccbbe.js"><link rel="prefetch" href="/xingchen/assets/js/108.f21cc836.js"><link rel="prefetch" href="/xingchen/assets/js/109.1687f56d.js"><link rel="prefetch" href="/xingchen/assets/js/11.2f5782c7.js"><link rel="prefetch" href="/xingchen/assets/js/110.a82195df.js"><link rel="prefetch" href="/xingchen/assets/js/111.335ae45d.js"><link rel="prefetch" href="/xingchen/assets/js/112.e167e5fa.js"><link rel="prefetch" href="/xingchen/assets/js/113.ddd2a386.js"><link rel="prefetch" href="/xingchen/assets/js/114.7507f5fd.js"><link rel="prefetch" href="/xingchen/assets/js/115.de39161e.js"><link rel="prefetch" href="/xingchen/assets/js/116.b5d8d732.js"><link rel="prefetch" href="/xingchen/assets/js/117.1e4eec1d.js"><link rel="prefetch" href="/xingchen/assets/js/118.902db092.js"><link rel="prefetch" href="/xingchen/assets/js/119.179aba83.js"><link rel="prefetch" href="/xingchen/assets/js/12.97522e61.js"><link rel="prefetch" href="/xingchen/assets/js/120.907d0297.js"><link rel="prefetch" href="/xingchen/assets/js/121.99f14263.js"><link rel="prefetch" href="/xingchen/assets/js/122.cc1f89a0.js"><link rel="prefetch" href="/xingchen/assets/js/123.bde28301.js"><link rel="prefetch" href="/xingchen/assets/js/124.c34f5c9b.js"><link rel="prefetch" href="/xingchen/assets/js/125.ac8d24bd.js"><link rel="prefetch" href="/xingchen/assets/js/127.6d11459b.js"><link rel="prefetch" href="/xingchen/assets/js/128.6497a86d.js"><link rel="prefetch" href="/xingchen/assets/js/129.226db5ee.js"><link rel="prefetch" href="/xingchen/assets/js/13.da1a3f07.js"><link rel="prefetch" href="/xingchen/assets/js/130.b5942383.js"><link rel="prefetch" href="/xingchen/assets/js/131.6210e5d7.js"><link rel="prefetch" href="/xingchen/assets/js/132.2f58b017.js"><link rel="prefetch" href="/xingchen/assets/js/133.a181a359.js"><link rel="prefetch" href="/xingchen/assets/js/14.fe4a33bb.js"><link rel="prefetch" href="/xingchen/assets/js/15.21d4eaca.js"><link rel="prefetch" href="/xingchen/assets/js/16.c853a137.js"><link rel="prefetch" href="/xingchen/assets/js/17.61b0cfbc.js"><link rel="prefetch" href="/xingchen/assets/js/18.aa314438.js"><link rel="prefetch" href="/xingchen/assets/js/19.02f62302.js"><link rel="prefetch" href="/xingchen/assets/js/20.23447ef3.js"><link rel="prefetch" href="/xingchen/assets/js/21.6dc9d8aa.js"><link rel="prefetch" href="/xingchen/assets/js/22.9ed9c6b6.js"><link rel="prefetch" href="/xingchen/assets/js/23.aee134c7.js"><link rel="prefetch" href="/xingchen/assets/js/24.5f61fcba.js"><link rel="prefetch" href="/xingchen/assets/js/25.62a742ce.js"><link rel="prefetch" href="/xingchen/assets/js/26.50ba4ab0.js"><link rel="prefetch" href="/xingchen/assets/js/27.ee91407e.js"><link rel="prefetch" href="/xingchen/assets/js/28.f8a736c7.js"><link rel="prefetch" href="/xingchen/assets/js/29.644e5cfa.js"><link rel="prefetch" href="/xingchen/assets/js/3.1555e676.js"><link rel="prefetch" href="/xingchen/assets/js/30.20572658.js"><link rel="prefetch" href="/xingchen/assets/js/31.4a21df99.js"><link rel="prefetch" href="/xingchen/assets/js/32.4290759a.js"><link rel="prefetch" href="/xingchen/assets/js/33.ed107e36.js"><link rel="prefetch" href="/xingchen/assets/js/34.454a6db9.js"><link rel="prefetch" href="/xingchen/assets/js/35.d58a959c.js"><link rel="prefetch" href="/xingchen/assets/js/36.a5242abf.js"><link rel="prefetch" href="/xingchen/assets/js/37.34c31688.js"><link rel="prefetch" href="/xingchen/assets/js/38.06c23d26.js"><link rel="prefetch" href="/xingchen/assets/js/39.1b167583.js"><link rel="prefetch" href="/xingchen/assets/js/4.79e3ce3d.js"><link rel="prefetch" href="/xingchen/assets/js/40.44f8b6c1.js"><link rel="prefetch" href="/xingchen/assets/js/41.36198171.js"><link rel="prefetch" href="/xingchen/assets/js/42.f62d7e38.js"><link rel="prefetch" href="/xingchen/assets/js/43.7302ee5b.js"><link rel="prefetch" href="/xingchen/assets/js/44.58849855.js"><link rel="prefetch" href="/xingchen/assets/js/45.16042e59.js"><link rel="prefetch" href="/xingchen/assets/js/46.4b531a07.js"><link rel="prefetch" href="/xingchen/assets/js/47.5731f90a.js"><link rel="prefetch" href="/xingchen/assets/js/48.cc52bb32.js"><link rel="prefetch" href="/xingchen/assets/js/49.086fa434.js"><link rel="prefetch" href="/xingchen/assets/js/5.e376ddbc.js"><link rel="prefetch" href="/xingchen/assets/js/50.f1e432ed.js"><link rel="prefetch" href="/xingchen/assets/js/51.054e8894.js"><link rel="prefetch" href="/xingchen/assets/js/52.73243566.js"><link rel="prefetch" href="/xingchen/assets/js/53.ec587e14.js"><link rel="prefetch" href="/xingchen/assets/js/54.9d13b841.js"><link rel="prefetch" href="/xingchen/assets/js/55.e8a45a0d.js"><link rel="prefetch" href="/xingchen/assets/js/56.e8c41e5a.js"><link rel="prefetch" href="/xingchen/assets/js/57.3d587386.js"><link rel="prefetch" href="/xingchen/assets/js/58.3c0431c0.js"><link rel="prefetch" href="/xingchen/assets/js/59.fbbe3a3c.js"><link rel="prefetch" href="/xingchen/assets/js/6.2acbb0fe.js"><link rel="prefetch" href="/xingchen/assets/js/60.913bd050.js"><link rel="prefetch" href="/xingchen/assets/js/61.4451b098.js"><link rel="prefetch" href="/xingchen/assets/js/62.9c21f238.js"><link rel="prefetch" href="/xingchen/assets/js/63.d595348f.js"><link rel="prefetch" href="/xingchen/assets/js/64.40d7f182.js"><link rel="prefetch" href="/xingchen/assets/js/65.aca69de2.js"><link rel="prefetch" href="/xingchen/assets/js/66.2f47dc61.js"><link rel="prefetch" href="/xingchen/assets/js/67.5bb32134.js"><link rel="prefetch" href="/xingchen/assets/js/68.dc746544.js"><link rel="prefetch" href="/xingchen/assets/js/69.ec6e378a.js"><link rel="prefetch" href="/xingchen/assets/js/7.ad96cf3d.js"><link rel="prefetch" href="/xingchen/assets/js/70.1487e5a4.js"><link rel="prefetch" href="/xingchen/assets/js/71.54f10fae.js"><link rel="prefetch" href="/xingchen/assets/js/72.4abbeb3a.js"><link rel="prefetch" href="/xingchen/assets/js/73.412453cd.js"><link rel="prefetch" href="/xingchen/assets/js/74.d59e54c8.js"><link rel="prefetch" href="/xingchen/assets/js/75.95aa15cd.js"><link rel="prefetch" href="/xingchen/assets/js/76.6bc08d1b.js"><link rel="prefetch" href="/xingchen/assets/js/77.e5a81fab.js"><link rel="prefetch" href="/xingchen/assets/js/78.e4f8a0f4.js"><link rel="prefetch" href="/xingchen/assets/js/79.c86f7809.js"><link rel="prefetch" href="/xingchen/assets/js/8.356c890e.js"><link rel="prefetch" href="/xingchen/assets/js/80.c29cb623.js"><link rel="prefetch" href="/xingchen/assets/js/81.d9e7557b.js"><link rel="prefetch" href="/xingchen/assets/js/82.e8b75549.js"><link rel="prefetch" href="/xingchen/assets/js/83.ab193500.js"><link rel="prefetch" href="/xingchen/assets/js/84.0f2efcc1.js"><link rel="prefetch" href="/xingchen/assets/js/85.777a5ec7.js"><link rel="prefetch" href="/xingchen/assets/js/86.6ca64de5.js"><link rel="prefetch" href="/xingchen/assets/js/87.6c534565.js"><link rel="prefetch" href="/xingchen/assets/js/88.bf00aea8.js"><link rel="prefetch" href="/xingchen/assets/js/89.bd555073.js"><link rel="prefetch" href="/xingchen/assets/js/9.b12d7370.js"><link rel="prefetch" href="/xingchen/assets/js/90.3b28725f.js"><link rel="prefetch" href="/xingchen/assets/js/91.acfcb3ea.js"><link rel="prefetch" href="/xingchen/assets/js/92.abb2a987.js"><link rel="prefetch" href="/xingchen/assets/js/93.d98f43b1.js"><link rel="prefetch" href="/xingchen/assets/js/94.6857c864.js"><link rel="prefetch" href="/xingchen/assets/js/95.de0d7fbb.js"><link rel="prefetch" href="/xingchen/assets/js/96.1dea2317.js"><link rel="prefetch" href="/xingchen/assets/js/97.4a47703b.js"><link rel="prefetch" href="/xingchen/assets/js/98.ab44542d.js"><link rel="prefetch" href="/xingchen/assets/js/99.0a58f911.js">
+    <link rel="stylesheet" href="/xingchen/assets/css/0.styles.f612ea4d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xingchen/" class="home-link router-link-active"><!----> <span class="site-name">星辰</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/basic/css/字体设置.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/javascript/基础问题.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/es6/基础内容.html" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue3/基础内容.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue2/基础内容.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/router/vue路由.html" class="nav-link">
+  Router
+</a></li></ul></div></div><div class="nav-item"><a href="/xingchen/typescript/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/xingchen/canvas/" class="nav-link">
+  Canvas
+</a></div><div class="nav-item"><a href="/xingchen/videos/" class="nav-link">
+  Video
+</a></div><div class="nav-item"><a href="/xingchen/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/xingchen/mobile/" class="nav-link">
+  移动端
+</a></div><div class="nav-item"><a href="/xingchen/guide/" class="nav-link">
+  开发规范
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link">
+  其他分类
+</a></div><div class="nav-item"><a href="https://github.com/changzhengithub/xingchen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/basic/css/字体设置.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/javascript/基础问题.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/es6/基础内容.html" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue3/基础内容.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue2/基础内容.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/router/vue路由.html" class="nav-link">
+  Router
+</a></li></ul></div></div><div class="nav-item"><a href="/xingchen/typescript/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/xingchen/canvas/" class="nav-link">
+  Canvas
+</a></div><div class="nav-item"><a href="/xingchen/videos/" class="nav-link">
+  Video
+</a></div><div class="nav-item"><a href="/xingchen/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/xingchen/mobile/" class="nav-link">
+  移动端
+</a></div><div class="nav-item"><a href="/xingchen/guide/" class="nav-link">
+  开发规范
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link">
+  其他分类
+</a></div><div class="nav-item"><a href="https://github.com/changzhengithub/xingchen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue3</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue2</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/xingchen/vue/vue2/基础内容.html" class="sidebar-link">Vue2文档</a></li><li><a href="/xingchen/vue/vue2/vue常见问题.html" class="sidebar-link">Vue2常见问题</a></li><li><a href="/xingchen/vue/vue2/vue风格指南.html" class="sidebar-link">风格指南</a></li><li><a href="/xingchen/vue/vue2/组件之间的通信.html" class="sidebar-link">组件之间的通信</a></li><li><a href="/xingchen/vue/vue2/在组件上使用v-model.html" class="sidebar-link">组件使用v-model</a></li><li><a href="/xingchen/vue/vue2/vue过渡效果实现.html" class="sidebar-link">Vue动画效果</a></li><li><a href="/xingchen/vue/vue2/vuex状态管理器.html" class="sidebar-link">Vuex状态管理器</a></li><li><a href="/xingchen/vue/vue2/搭建vue项目工程.html" class="active sidebar-link">搭建Vue工程化项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#创建项目" class="sidebar-link">创建项目</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#目录与静态资源" class="sidebar-link">目录与静态资源</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#vue-onfig-js配置" class="sidebar-link">vue.onfig.js配置</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#多页面" class="sidebar-link">多页面</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#环境变量和模式" class="sidebar-link">环境变量和模式</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#css配置" class="sidebar-link">css配置</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#添加路由" class="sidebar-link">添加路由</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#添加vuex" class="sidebar-link">添加vuex</a></li><li class="sidebar-sub-header"><a href="/xingchen/vue/vue2/搭建vue项目工程.html#添加axios" class="sidebar-link">添加axios</a></li></ul></li><li><a href="/xingchen/vue/vue2/vue-cli添加vuex.html" class="sidebar-link">Vue2添加Vuex</a></li><li><a href="/xingchen/vue/vue2/vue-cli添加路由.html" class="sidebar-link">Vue2添加路由</a></li><li><a href="/xingchen/vue/vue2/axios封装.html" class="sidebar-link">Axios封装</a></li><li><a href="/xingchen/vue/vue2/vue添加flex.html" class="sidebar-link">Vue添加Flex</a></li><li><a href="/xingchen/vue/vue2/vue添加typescript.html" class="sidebar-link">Vue2添加TS</a></li><li><a href="/xingchen/vue/vue2/vuex结合localStorage使用.html" class="sidebar-link">Vuex本地持久化</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Router</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常见问题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="搭建vue工程化项目"><a href="#搭建vue工程化项目" class="header-anchor">#</a> 搭建Vue工程化项目</h1> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> <span class="token function">install</span> -g @vue/cli
+</code></pre></div><h2 id="创建项目"><a href="#创建项目" class="header-anchor">#</a> 创建项目</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>vue create hello-world
+</code></pre></div><p>通过create命令创建vue项目，可以选择添加我们需要的选项，比如，路由，vuex，axios，typescript等，也可以选择默认，当然也可以什么都不选，然后回车，等待命令创建好项目就可以了，然后运行 <code>npm run serve</code> 开启项目。</p> <h2 id="目录与静态资源"><a href="#目录与静态资源" class="header-anchor">#</a> 目录与静态资源</h2> <p>目录结构：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>├── node_modules        <span class="token comment"># node包</span>
+├── public
+│   ├── favicon.ico     <span class="token comment"># favicon图标</span>
+│   └── index.html      <span class="token comment"># html模板</span>
+├── src
+│   ├── assets          <span class="token comment"># 主题 字体等静态资源 (由 webpack 处理加载)</span>
+│   ├── components      <span class="token comment"># 全局组件</span>
+│   ├── router          <span class="token comment"># 路由</span>
+│   │   └── index.js    <span class="token comment"># 路由</span>
+│   ├── store           <span class="token comment"># 全局 vuex store</span>
+│   │   └── index.js    <span class="token comment"># vuex</span>
+│   ├── pages           <span class="token comment"># 多页入口</span>
+│   ├── views           <span class="token comment"># 所有页面</span>
+│   ├── App.vue         <span class="token comment"># 入口页面</span>
+│   ├── main.ts         <span class="token comment"># 入口文件 加载组件 初始化等</span>
+│   ├── shims-tsx.d.ts
+│   └── shims-vue.d.ts
+├── .browserslistrc     <span class="token comment"># browserslistrc 配置文件 (用于支持 Autoprefixer)</span>
+├── .eslintrc.js        <span class="token comment"># eslint 配置</span>
+├── .gitignore
+├── babel.config.js     <span class="token comment"># babel-loader 配置</span>
+├── package-lock.json
+├── package.json        <span class="token comment"># package.json 依赖</span>
+├── README.md
+├── tsconfig.json       <span class="token comment"># typescript 配置</span>
+└── vue.config.js       <span class="token comment"># vue-cli 配置</span>
+</code></pre></div><p>静态资源存放：</p> <p>任何放在public文件夹下的文件都不会被webpack处理，只进行简单的复制，引入其中的文件需要使用绝对路径来引用。放在其他文件下通过相对路径而引入的，都会被webpack处理，比如图片，小于多少kb的会被内联，打包在一起，减少HTTP请求，可以在 <code>vue.config.js</code> 的 <code>chainWebpack</code> 进行设置。</p> <p>当动态引入图片时，我们应该把图片放在public文件下。</p> <p>如果项目不是部署在根目录下，那么引入public文件的内容就需要配置 publicPath 前缀。</p> <p>在模板中，你首先需要向你的组件传入基础 URL：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取根路径</span>
+    publicPath<span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">BASE_URL</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>`${publicPath}my-image.png`<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="vue-onfig-js配置"><a href="#vue-onfig-js配置" class="header-anchor">#</a> vue.onfig.js配置</h2> <p>vue-cli3.0默认是把全局CLI配置给隐藏了，如果想要进行全局CLI配置，可以在根目录下(<code>package.json</code> 同级)新建一个 <code>vue.config.js</code> 文件来进行配置。webpack需要在 <code>configureWebpack</code> 选项中配置。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// vue.config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 选项...</span>
+  <span class="token comment">// 如果您不需要生产时的源映射，那么将此设置为false可以加速生产构建</span>
+  productionSourceMap<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// devServer:{type:Object} 3个属性host,port,https</span>
+  <span class="token comment">// 它支持webPack-dev-server的所有选项</span>
+  devServer<span class="token operator">:</span> <span class="token punctuation">{</span>
+      host<span class="token operator">:</span> <span class="token string">'xxx.xxx.xxx.xx'</span><span class="token punctuation">,</span> <span class="token comment">// 本机地址</span>
+      port<span class="token operator">:</span> <span class="token number">8080</span><span class="token punctuation">,</span> <span class="token comment">// 端口号</span>
+      https<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// https:{type:Boolean}</span>
+      open<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//配置自动启动浏览器</span>
+      <span class="token comment">// proxy: 'http://localhost:4000' // 配置跨域处理,只有一个代理</span>
+      proxy<span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">'/api'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              target<span class="token operator">:</span> <span class="token string">'http://www.xxx.com/api'</span><span class="token punctuation">,</span> <span class="token comment">// 跨域地址</span>
+              changeOrigin<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              pathRewrite<span class="token operator">:</span> <span class="token punctuation">{</span>
+                  <span class="token string">'^/api'</span><span class="token operator">:</span> <span class="token string">''</span>
+              <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// webpack配置</span>
+  configureWebpack<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// css配置</span>
+  css<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 多页面配置</span>
+  pages<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>配置链接：<a href="https://cli.vuejs.org/zh/config/" target="_blank" rel="noopener noreferrer">vue.config.js配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="多页面"><a href="#多页面" class="header-anchor">#</a> 多页面</h2> <p>配置多页面应用，要单独为其添加入口文件 <code>main.js</code> 和路由、vuex等，但是公共组件是可以被共享的。</p> <p>在 src 下添加 pages 目录，在里面创建多页面，之前的单页面配置也拿到 pages 里。然后对每个页面进行单独的配置。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>├── pages
+│   ├── index          <span class="token comment"># index页面</span>
+│   │   ├── App.vue    <span class="token comment"># App组件</span>
+│   │   ├── router.js  <span class="token comment"># 路由配置</span>
+│   │   ├── store.js   <span class="token comment"># vuex</span>
+│   │   └── main.js    <span class="token comment"># 入口</span>
+│   ├── product        <span class="token comment"># product页面</span>
+│   │   ├── App.vue    <span class="token comment"># App组件</span>
+│   │   ├── router.js  <span class="token comment"># 路由配置</span>
+│   │   ├── store.js   <span class="token comment"># vuex</span>
+│   │   └── main.js    <span class="token comment"># 入口</span>
+</code></pre></div><p>然后在 <code>vue.config.js</code> 里配置 <code>pages</code> 选项。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// vue 多页面配置</span>
+  pages<span class="token operator">:</span> <span class="token punctuation">{</span>
+    index<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// page 的入口</span>
+      entry<span class="token operator">:</span> <span class="token string">'src/pages/index/main.js'</span><span class="token punctuation">,</span>
+      <span class="token comment">// 模板来源</span>
+      template<span class="token operator">:</span> <span class="token string">'public/index.html'</span><span class="token punctuation">,</span>
+      <span class="token comment">// 在 dist/index.html 的输出</span>
+      filename<span class="token operator">:</span> <span class="token string">'index.html'</span><span class="token punctuation">,</span>
+      <span class="token comment">// 当使用 title 选项时，</span>
+      <span class="token comment">// template 中的 title 标签需要是 &lt;title&gt;&lt;%= htmlWebpackPlugin.options.title %&gt;&lt;/title&gt;</span>
+      title<span class="token operator">:</span> <span class="token string">'Index Page'</span><span class="token punctuation">,</span>
+      <span class="token comment">// 在这个页面中包含的块，默认情况下会包含</span>
+      <span class="token comment">// 提取出来的通用 chunk 和 vendor chunk。</span>
+      chunks<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'chunk-vendors'</span><span class="token punctuation">,</span> <span class="token string">'chunk-common'</span><span class="token punctuation">,</span> <span class="token string">'index'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    product<span class="token operator">:</span> <span class="token punctuation">{</span>
+      entry<span class="token operator">:</span> <span class="token string">&quot;src/pages/product/main.js&quot;</span><span class="token punctuation">,</span>
+      template<span class="token operator">:</span> <span class="token string">&quot;public/product.html&quot;</span><span class="token punctuation">,</span>
+      filename<span class="token operator">:</span> <span class="token string">&quot;product.html&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="环境变量和模式"><a href="#环境变量和模式" class="header-anchor">#</a> 环境变量和模式</h2> <p>像 <code>&lt;%= BASE_URL %&gt;</code> 和 <code>process.env.NODE_ENV</code> 这些地址都是怎么得到的，这些是 <code>.env</code> 文件下的全局环境变量，也就是在当前项目都可以使用它。</p> <p><strong>环境变量</strong></p> <p>环境变量总共有四种方式：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>.env                <span class="token comment"># 在所有的环境中被载入</span>
+.env.local          <span class="token comment"># 在所有的环境中被载入，但会被 git 忽略</span>
+.env.<span class="token punctuation">[</span>mode<span class="token punctuation">]</span>         <span class="token comment"># 只在指定的模式中被载入，mode是模式名字，随便取</span>
+.env.<span class="token punctuation">[</span>mode<span class="token punctuation">]</span>.local   <span class="token comment"># 只在指定的模式中被载入，但会被 git 忽略</span>
+</code></pre></div><p>添加全局环境变量：</p> <p>添加全局环境变量直接在 <code>.env</code> 文件下添加“键=值”对就行了，在src中使用环境变量的话，必须以 <code>VUE_APP_*</code> 开头。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">VUE_APP_SECRET</span><span class="token operator">=</span>secret
+<span class="token assign-left variable">FOO</span><span class="token operator">=</span>bar
+</code></pre></div><p>使用：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 全局使用</span>
+process.env.VUE_APP_SECRET
+
+<span class="token comment"># src外使用</span>
+process.env.FOO
+
+<span class="token comment"># public/index.html使用</span>
+<span class="token operator">&lt;</span>%<span class="token operator">=</span> BASE_URL %<span class="token operator">&gt;</span>
+</code></pre></div><p>除了 VUE_APP_* 变量之外，有两个特殊的变量 <code>NODE_ENV</code> 和 <code>BASE_URL</code> 会自动根据环境的变化而变化，不会是一个固定的值。</p> <p><strong>模式</strong></p> <p>环境变量默认有三种模式：</p> <ul><li><code>development</code>： 开发环境</li> <li><code>production</code>：生产环境</li> <li><code>test</code>：测试环境</li></ul> <p>在对应的模式下配置相应的环境变量，只会在相对应的模式下显示出来。比如添加 <code>.env.development</code>模式，要在 <code>package.json</code> 上添加 <code>--mode</code> 指令：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token string">&quot;scripts&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;docs:dev&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;vuepress dev docs --mode development&quot;</span>,
+  <span class="token string">&quot;docs:build&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+<span class="token punctuation">}</span>,
+</code></pre></div><h2 id="css配置"><a href="#css配置" class="header-anchor">#</a> css配置</h2> <p>我们把公共样式，css或scss都放在src/assets静态资源文件夹下面。</p> <p>vue-cli使用sass或者less在创建项目时会添加选项，如果没有选择也可以自己安装，以前安装sass需要安装 <code>node-sass</code>和<code>sass-loader</code>然后再修改webpack选项，现在只需要安装 <code>sass-loader</code>和<code>sass</code>，然后在 <code>vue.config.js</code>的 <code>css</code> 选项中配置 sass全局使用变量就可以了。</p> <p>安装CSS预处理器</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># Sass</span>
+<span class="token function">npm</span> <span class="token function">install</span> -D sass-loader sass
+
+<span class="token comment"># Less</span>
+<span class="token function">npm</span> <span class="token function">install</span> -D less-loader <span class="token function">less</span>
+</code></pre></div><p>配置sass使用全局变量</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// vue.config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  css<span class="token operator">:</span> <span class="token punctuation">{</span>
+    loaderOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+      sass<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// @是src的别名</span>
+        prependData<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">@import &quot;@/assets/sass/main.scss&quot;</span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      scss<span class="token operator">:</span> <span class="token punctuation">{</span>
+        prependData<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">@import &quot;@/assets/sass/main.scss&quot;;</span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      less<span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token comment">// `primary` is global variables fields name</span>
+        globalVars<span class="token operator">:</span> <span class="token punctuation">{</span>
+          primary<span class="token operator">:</span> <span class="token string">'#fff'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>定义全局sass样式：</p> <p>在src/assets目录下创建sass文件，在此文件夹下创建main.scss文件，main.scss文件为sass入口文件，main.scss在vue.config.js中定义了，就不需要在main.js中引入，会自动被全局使用。然后定义其他公共scss文件，在文件名前加上_来区分，如_flex.scss/_unit.scss文件。在main.scss引入这些公共sass文件就可以全局使用了。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// main.scss</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;./_flex.scss&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;./_unit.scss&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>计算适配尺寸：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// _unit.scss</span>
+<span class="token property"><span class="token variable">$unit</span></span><span class="token punctuation">:</span> 75 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$symbol</span></span><span class="token punctuation">:</span> 10vw <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+</code></pre></div><p>在 vue文件中使用</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+  <span class="token property">width</span><span class="token punctuation">:</span> 126 / $unit * $symbol<span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>导入其他css或scss文件</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+  import <span class="token string">'./foo.module.css'</span>
+  // 所有支持的预处理器都一样工作
+  import <span class="token string">'./foo.module.scss'</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>postCss 为css添加前缀，vue-cli默认开启。</p> <p>如果使用flexible的rem来适配尺寸，可以使用插件 px2rem-loader 来自动转换。</p> <h2 id="添加路由"><a href="#添加路由" class="header-anchor">#</a> 添加路由</h2> <p><a href="/xingchen/vue/router/vue-cli添加路由.html">vue-cli添加路由</a></p> <h2 id="添加vuex"><a href="#添加vuex" class="header-anchor">#</a> 添加vuex</h2> <p><a href="/xingchen/vue/vuex/vue-cli添加vuex.html">vue-cli添加vuex</a></p> <h2 id="添加axios"><a href="#添加axios" class="header-anchor">#</a> 添加axios</h2> <p><a href="/xingchen/vue/basic/axios封装.html">axios封装</a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xingchen/vue/vue2/vuex状态管理器.html" class="prev">
+        Vuex状态管理器
+      </a></span> <span class="next"><a href="/xingchen/vue/vue2/vue-cli添加vuex.html">
+        Vue2添加Vuex
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xingchen/assets/js/app.449d8865.js" defer></script><script src="/xingchen/assets/js/2.8855fdcf.js" defer></script><script src="/xingchen/assets/js/126.e623cfae.js" defer></script>
+  </body>
+</html>

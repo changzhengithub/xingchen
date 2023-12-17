@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>echarts使用 | 星辰</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/xingchen/logo.ico">
+    <meta name="description" content="我的个人博客，记录点滴">
+    <link rel="preload" href="/xingchen/assets/css/0.styles.f612ea4d.css" as="style"><link rel="preload" href="/xingchen/assets/js/app.449d8865.js" as="script"><link rel="preload" href="/xingchen/assets/js/2.8855fdcf.js" as="script"><link rel="preload" href="/xingchen/assets/js/81.d9e7557b.js" as="script"><link rel="prefetch" href="/xingchen/assets/js/10.b3cd0e05.js"><link rel="prefetch" href="/xingchen/assets/js/100.3741cb87.js"><link rel="prefetch" href="/xingchen/assets/js/101.6184018c.js"><link rel="prefetch" href="/xingchen/assets/js/102.14bb6b74.js"><link rel="prefetch" href="/xingchen/assets/js/103.0c6bdc99.js"><link rel="prefetch" href="/xingchen/assets/js/104.4746a397.js"><link rel="prefetch" href="/xingchen/assets/js/105.7479ddb9.js"><link rel="prefetch" href="/xingchen/assets/js/106.98aa2aa6.js"><link rel="prefetch" href="/xingchen/assets/js/107.c2bccbbe.js"><link rel="prefetch" href="/xingchen/assets/js/108.f21cc836.js"><link rel="prefetch" href="/xingchen/assets/js/109.1687f56d.js"><link rel="prefetch" href="/xingchen/assets/js/11.2f5782c7.js"><link rel="prefetch" href="/xingchen/assets/js/110.a82195df.js"><link rel="prefetch" href="/xingchen/assets/js/111.335ae45d.js"><link rel="prefetch" href="/xingchen/assets/js/112.e167e5fa.js"><link rel="prefetch" href="/xingchen/assets/js/113.ddd2a386.js"><link rel="prefetch" href="/xingchen/assets/js/114.7507f5fd.js"><link rel="prefetch" href="/xingchen/assets/js/115.de39161e.js"><link rel="prefetch" href="/xingchen/assets/js/116.b5d8d732.js"><link rel="prefetch" href="/xingchen/assets/js/117.1e4eec1d.js"><link rel="prefetch" href="/xingchen/assets/js/118.902db092.js"><link rel="prefetch" href="/xingchen/assets/js/119.179aba83.js"><link rel="prefetch" href="/xingchen/assets/js/12.97522e61.js"><link rel="prefetch" href="/xingchen/assets/js/120.907d0297.js"><link rel="prefetch" href="/xingchen/assets/js/121.99f14263.js"><link rel="prefetch" href="/xingchen/assets/js/122.cc1f89a0.js"><link rel="prefetch" href="/xingchen/assets/js/123.bde28301.js"><link rel="prefetch" href="/xingchen/assets/js/124.c34f5c9b.js"><link rel="prefetch" href="/xingchen/assets/js/125.ac8d24bd.js"><link rel="prefetch" href="/xingchen/assets/js/126.e623cfae.js"><link rel="prefetch" href="/xingchen/assets/js/127.6d11459b.js"><link rel="prefetch" href="/xingchen/assets/js/128.6497a86d.js"><link rel="prefetch" href="/xingchen/assets/js/129.226db5ee.js"><link rel="prefetch" href="/xingchen/assets/js/13.da1a3f07.js"><link rel="prefetch" href="/xingchen/assets/js/130.b5942383.js"><link rel="prefetch" href="/xingchen/assets/js/131.6210e5d7.js"><link rel="prefetch" href="/xingchen/assets/js/132.2f58b017.js"><link rel="prefetch" href="/xingchen/assets/js/133.a181a359.js"><link rel="prefetch" href="/xingchen/assets/js/14.fe4a33bb.js"><link rel="prefetch" href="/xingchen/assets/js/15.21d4eaca.js"><link rel="prefetch" href="/xingchen/assets/js/16.c853a137.js"><link rel="prefetch" href="/xingchen/assets/js/17.61b0cfbc.js"><link rel="prefetch" href="/xingchen/assets/js/18.aa314438.js"><link rel="prefetch" href="/xingchen/assets/js/19.02f62302.js"><link rel="prefetch" href="/xingchen/assets/js/20.23447ef3.js"><link rel="prefetch" href="/xingchen/assets/js/21.6dc9d8aa.js"><link rel="prefetch" href="/xingchen/assets/js/22.9ed9c6b6.js"><link rel="prefetch" href="/xingchen/assets/js/23.aee134c7.js"><link rel="prefetch" href="/xingchen/assets/js/24.5f61fcba.js"><link rel="prefetch" href="/xingchen/assets/js/25.62a742ce.js"><link rel="prefetch" href="/xingchen/assets/js/26.50ba4ab0.js"><link rel="prefetch" href="/xingchen/assets/js/27.ee91407e.js"><link rel="prefetch" href="/xingchen/assets/js/28.f8a736c7.js"><link rel="prefetch" href="/xingchen/assets/js/29.644e5cfa.js"><link rel="prefetch" href="/xingchen/assets/js/3.1555e676.js"><link rel="prefetch" href="/xingchen/assets/js/30.20572658.js"><link rel="prefetch" href="/xingchen/assets/js/31.4a21df99.js"><link rel="prefetch" href="/xingchen/assets/js/32.4290759a.js"><link rel="prefetch" href="/xingchen/assets/js/33.ed107e36.js"><link rel="prefetch" href="/xingchen/assets/js/34.454a6db9.js"><link rel="prefetch" href="/xingchen/assets/js/35.d58a959c.js"><link rel="prefetch" href="/xingchen/assets/js/36.a5242abf.js"><link rel="prefetch" href="/xingchen/assets/js/37.34c31688.js"><link rel="prefetch" href="/xingchen/assets/js/38.06c23d26.js"><link rel="prefetch" href="/xingchen/assets/js/39.1b167583.js"><link rel="prefetch" href="/xingchen/assets/js/4.79e3ce3d.js"><link rel="prefetch" href="/xingchen/assets/js/40.44f8b6c1.js"><link rel="prefetch" href="/xingchen/assets/js/41.36198171.js"><link rel="prefetch" href="/xingchen/assets/js/42.f62d7e38.js"><link rel="prefetch" href="/xingchen/assets/js/43.7302ee5b.js"><link rel="prefetch" href="/xingchen/assets/js/44.58849855.js"><link rel="prefetch" href="/xingchen/assets/js/45.16042e59.js"><link rel="prefetch" href="/xingchen/assets/js/46.4b531a07.js"><link rel="prefetch" href="/xingchen/assets/js/47.5731f90a.js"><link rel="prefetch" href="/xingchen/assets/js/48.cc52bb32.js"><link rel="prefetch" href="/xingchen/assets/js/49.086fa434.js"><link rel="prefetch" href="/xingchen/assets/js/5.e376ddbc.js"><link rel="prefetch" href="/xingchen/assets/js/50.f1e432ed.js"><link rel="prefetch" href="/xingchen/assets/js/51.054e8894.js"><link rel="prefetch" href="/xingchen/assets/js/52.73243566.js"><link rel="prefetch" href="/xingchen/assets/js/53.ec587e14.js"><link rel="prefetch" href="/xingchen/assets/js/54.9d13b841.js"><link rel="prefetch" href="/xingchen/assets/js/55.e8a45a0d.js"><link rel="prefetch" href="/xingchen/assets/js/56.e8c41e5a.js"><link rel="prefetch" href="/xingchen/assets/js/57.3d587386.js"><link rel="prefetch" href="/xingchen/assets/js/58.3c0431c0.js"><link rel="prefetch" href="/xingchen/assets/js/59.fbbe3a3c.js"><link rel="prefetch" href="/xingchen/assets/js/6.2acbb0fe.js"><link rel="prefetch" href="/xingchen/assets/js/60.913bd050.js"><link rel="prefetch" href="/xingchen/assets/js/61.4451b098.js"><link rel="prefetch" href="/xingchen/assets/js/62.9c21f238.js"><link rel="prefetch" href="/xingchen/assets/js/63.d595348f.js"><link rel="prefetch" href="/xingchen/assets/js/64.40d7f182.js"><link rel="prefetch" href="/xingchen/assets/js/65.aca69de2.js"><link rel="prefetch" href="/xingchen/assets/js/66.2f47dc61.js"><link rel="prefetch" href="/xingchen/assets/js/67.5bb32134.js"><link rel="prefetch" href="/xingchen/assets/js/68.dc746544.js"><link rel="prefetch" href="/xingchen/assets/js/69.ec6e378a.js"><link rel="prefetch" href="/xingchen/assets/js/7.ad96cf3d.js"><link rel="prefetch" href="/xingchen/assets/js/70.1487e5a4.js"><link rel="prefetch" href="/xingchen/assets/js/71.54f10fae.js"><link rel="prefetch" href="/xingchen/assets/js/72.4abbeb3a.js"><link rel="prefetch" href="/xingchen/assets/js/73.412453cd.js"><link rel="prefetch" href="/xingchen/assets/js/74.d59e54c8.js"><link rel="prefetch" href="/xingchen/assets/js/75.95aa15cd.js"><link rel="prefetch" href="/xingchen/assets/js/76.6bc08d1b.js"><link rel="prefetch" href="/xingchen/assets/js/77.e5a81fab.js"><link rel="prefetch" href="/xingchen/assets/js/78.e4f8a0f4.js"><link rel="prefetch" href="/xingchen/assets/js/79.c86f7809.js"><link rel="prefetch" href="/xingchen/assets/js/8.356c890e.js"><link rel="prefetch" href="/xingchen/assets/js/80.c29cb623.js"><link rel="prefetch" href="/xingchen/assets/js/82.e8b75549.js"><link rel="prefetch" href="/xingchen/assets/js/83.ab193500.js"><link rel="prefetch" href="/xingchen/assets/js/84.0f2efcc1.js"><link rel="prefetch" href="/xingchen/assets/js/85.777a5ec7.js"><link rel="prefetch" href="/xingchen/assets/js/86.6ca64de5.js"><link rel="prefetch" href="/xingchen/assets/js/87.6c534565.js"><link rel="prefetch" href="/xingchen/assets/js/88.bf00aea8.js"><link rel="prefetch" href="/xingchen/assets/js/89.bd555073.js"><link rel="prefetch" href="/xingchen/assets/js/9.b12d7370.js"><link rel="prefetch" href="/xingchen/assets/js/90.3b28725f.js"><link rel="prefetch" href="/xingchen/assets/js/91.acfcb3ea.js"><link rel="prefetch" href="/xingchen/assets/js/92.abb2a987.js"><link rel="prefetch" href="/xingchen/assets/js/93.d98f43b1.js"><link rel="prefetch" href="/xingchen/assets/js/94.6857c864.js"><link rel="prefetch" href="/xingchen/assets/js/95.de0d7fbb.js"><link rel="prefetch" href="/xingchen/assets/js/96.1dea2317.js"><link rel="prefetch" href="/xingchen/assets/js/97.4a47703b.js"><link rel="prefetch" href="/xingchen/assets/js/98.ab44542d.js"><link rel="prefetch" href="/xingchen/assets/js/99.0a58f911.js">
+    <link rel="stylesheet" href="/xingchen/assets/css/0.styles.f612ea4d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xingchen/" class="home-link router-link-active"><!----> <span class="site-name">星辰</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/basic/css/字体设置.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/javascript/基础问题.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/es6/基础内容.html" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue3/基础内容.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue2/基础内容.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/router/vue路由.html" class="nav-link">
+  Router
+</a></li></ul></div></div><div class="nav-item"><a href="/xingchen/typescript/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/xingchen/canvas/" class="nav-link">
+  Canvas
+</a></div><div class="nav-item"><a href="/xingchen/videos/" class="nav-link">
+  Video
+</a></div><div class="nav-item"><a href="/xingchen/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/xingchen/mobile/" class="nav-link">
+  移动端
+</a></div><div class="nav-item"><a href="/xingchen/guide/" class="nav-link">
+  开发规范
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link router-link-active">
+  其他分类
+</a></div><div class="nav-item"><a href="https://github.com/changzhengithub/xingchen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/basic/css/字体设置.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/javascript/基础问题.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/basic/es6/基础内容.html" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue3/基础内容.html" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/vue2/基础内容.html" class="nav-link">
+  Vue2
+</a></li><li class="dropdown-item"><!----> <a href="/xingchen/vue/router/vue路由.html" class="nav-link">
+  Router
+</a></li></ul></div></div><div class="nav-item"><a href="/xingchen/typescript/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/xingchen/canvas/" class="nav-link">
+  Canvas
+</a></div><div class="nav-item"><a href="/xingchen/videos/" class="nav-link">
+  Video
+</a></div><div class="nav-item"><a href="/xingchen/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/xingchen/mobile/" class="nav-link">
+  移动端
+</a></div><div class="nav-item"><a href="/xingchen/guide/" class="nav-link">
+  开发规范
+</a></div><div class="nav-item"><a href="/xingchen/synthesize/" class="nav-link router-link-active">
+  其他分类
+</a></div><div class="nav-item"><a href="https://github.com/changzhengithub/xingchen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Markdown</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Chart</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/xingchen/synthesize/echart/echarts使用.html" class="active sidebar-link">echarts使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/xingchen/synthesize/echart/echarts使用.html#基础使用" class="sidebar-link">基础使用</a></li><li class="sidebar-sub-header"><a href="/xingchen/synthesize/echart/echarts使用.html#在vue中使用" class="sidebar-link">在vue中使用</a></li><li class="sidebar-sub-header"><a href="/xingchen/synthesize/echart/echarts使用.html#解决方法" class="sidebar-link">解决方法</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Map</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Editor</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>UI</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>IDE</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Server</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="echarts使用"><a href="#echarts使用" class="header-anchor">#</a> echarts使用</h1> <p>echarts官网：<a href="http://echarts.apache.org/zh/index.html" target="_blank" rel="noopener noreferrer">http://echarts.apache.org/zh/index.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>option配置项：<a href="https://echarts.apache.org/zh/option.html#title" target="_blank" rel="noopener noreferrer">https://echarts.apache.org/zh/option.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>echarts通过canvas来渲染，指定一个id容器，通过option指定不同的参数来实现。option最常用的配置项就有 title、tooltip、legend、xAxis、yAxis、series等，series是图表内容配置，通过维护该数组可以在一个图表上设置多个条数据，比如嵌套饼状图，多条折线图。</p> <h2 id="基础使用"><a href="#基础使用" class="header-anchor">#</a> 基础使用</h2> <p>在HTML中简单使用echarts直接通过cdn地址引入就可以了。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>IE=edge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>echarts<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 为 ECharts 准备一个具备大小（宽高）的 DOM --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>main<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> 600px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span>400px<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 引入echarts --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      <span class="token comment">// 基于准备好的dom，初始化echarts实例</span>
+      <span class="token keyword">var</span> myChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'main'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 指定图表的配置项和数据</span>
+      <span class="token keyword">var</span> option <span class="token operator">=</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 标题</span>
+          title<span class="token operator">:</span> <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> <span class="token string">'ECharts 入门示例'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 鼠标放上去提示框</span>
+          tooltip<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 图例组件</span>
+          legend<span class="token operator">:</span> <span class="token punctuation">{</span>
+            data<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'销量'</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// x轴</span>
+          xAxis<span class="token operator">:</span> <span class="token punctuation">{</span>
+            data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;衬衫&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;羊毛衫&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;雪纺衫&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;裤子&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;高跟鞋&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;袜子&quot;</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// y轴</span>
+          yAxis<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 图表设置，通过数组可配置多个</span>
+          series<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+            name<span class="token operator">:</span> <span class="token string">'销量'</span><span class="token punctuation">,</span>
+            type<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+            data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">36</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token comment">// 使用刚指定的配置项和数据显示图表。</span>
+      myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="在vue中使用"><a href="#在vue中使用" class="header-anchor">#</a> 在vue中使用</h2> <p>安装插件：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> i echarts --S
+</code></pre></div><p>最新版为5.1.0，和4.x版本使用还是有所区别的。</p> <p>4.x版本在vue中引入：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 全局引入</span>
+<span class="token comment">// main.js</span>
+<span class="token keyword">import</span> echarts <span class="token keyword">from</span> <span class="token string">'echarts'</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$echarts <span class="token operator">=</span> echarts
+
+<span class="token comment">// 按需引入</span>
+<span class="token comment">// main.js</span>
+<span class="token keyword">import</span> echarts <span class="token keyword">from</span> <span class="token string">'echarts'</span>
+<span class="token comment">// 组件中使用</span>
+<span class="token keyword">import</span> <span class="token string">'echarts/lib/chart/line'</span>
+<span class="token comment">// 如果import引入不行可以换成require</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'echarts/lib/chart/line'</span><span class="token punctuation">)</span>
+</code></pre></div><p>5.x版本在vue中引入：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 全局引入</span>
+<span class="token comment">// main.js</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> echarts <span class="token keyword">from</span> <span class="token string">'echarts'</span><span class="token punctuation">;</span>
+<span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$echarts <span class="token operator">=</span> echarts
+
+<span class="token comment">// 在组件中按需引入</span>
+<span class="token comment">// 引入 echarts 核心模块，核心模块提供了 echarts 使用必须要的接口。</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> echarts <span class="token keyword">from</span> <span class="token string">'echarts/core'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 引入柱状图图表，图表后缀都为 Chart</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  BarChart<span class="token punctuation">,</span>
+  PieChart<span class="token punctuation">,</span>
+  LineChart
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'echarts/charts'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 引入提示框，标题，直角坐标系组件，组件后缀都为 Component</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  TitleComponent<span class="token punctuation">,</span>
+  TooltipComponent<span class="token punctuation">,</span>
+  GridComponent<span class="token punctuation">,</span>
+  LegendComponent<span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'echarts/components'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 引入 Canvas 渲染器，注意引入 CanvasRenderer 或者 SVGRenderer 是必须的一步</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  CanvasRenderer
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'echarts/renderers'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 注册必须的组件</span>
+echarts<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token punctuation">[</span>TitleComponent<span class="token punctuation">,</span> TooltipComponent<span class="token punctuation">,</span> GridComponent<span class="token punctuation">,</span> LegendComponent<span class="token punctuation">,</span> BarChart<span class="token punctuation">,</span> PieChart<span class="token punctuation">,</span> LineChart<span class="token punctuation">,</span> CanvasRenderer<span class="token punctuation">]</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>5.x版本的按需引入和4.x还是有很大区别的，不过图表的配置项还都是相同的。</p> <h2 id="解决方法"><a href="#解决方法" class="header-anchor">#</a> 解决方法</h2> <p><strong>1、一个容器中配置多个图表</strong></p> <p>正常来说，一个容器上一个图表，然后在图表上可以渲染多条数据。但特殊情况下，一个容器内需要放多个图表。我们使用可以使用<code>grid</code>在容器中创建多个网格，每个网格可以渲染一个x轴和y轴，然后在xAxis/yAxis中使用<code>gridIndex</code>属性为每个坐标轴指定对应的网格，从0开始。然后再在<code>series</code>中每个图表中使用<code>xAxisIndex</code>/<code>yAxisIndex</code>属性为其指定在哪个坐标轴中显示，和gridIndex对应。这样就可以在一个容器中渲染多个图表或者内容了。</p> <p>在坐标轴上使用 <code>inverse: true</code>可以让该轴进行反转，实现上下共用一个轴的情况。</p> <div class="language-js extra-class"><pre class="language-js"><code>option <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 坐标轴指示器，在多个轴上显示，全部为'all'</span>
+  <span class="token comment">// axisPointer: {</span>
+  <span class="token comment">//   link: {xAxisIndex: [0, 1, ...]},</span>
+  <span class="token comment">// },</span>
+
+  <span class="token comment">// 渲染多个网格</span>
+  grid<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>left<span class="token operator">:</span> <span class="token string">'7%'</span><span class="token punctuation">,</span> top<span class="token operator">:</span> <span class="token string">'7%'</span><span class="token punctuation">,</span> width<span class="token operator">:</span> <span class="token string">'38%'</span><span class="token punctuation">,</span> height<span class="token operator">:</span> <span class="token string">'38%'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>right<span class="token operator">:</span> <span class="token string">'7%'</span><span class="token punctuation">,</span> top<span class="token operator">:</span> <span class="token string">'7%'</span><span class="token punctuation">,</span> width<span class="token operator">:</span> <span class="token string">'38%'</span><span class="token punctuation">,</span> height<span class="token operator">:</span> <span class="token string">'38%'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>left<span class="token operator">:</span> <span class="token string">'7%'</span><span class="token punctuation">,</span> bottom<span class="token operator">:</span> <span class="token string">'7%'</span><span class="token punctuation">,</span> width<span class="token operator">:</span> <span class="token string">'38%'</span><span class="token punctuation">,</span> height<span class="token operator">:</span> <span class="token string">'38%'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>right<span class="token operator">:</span> <span class="token string">'7%'</span><span class="token punctuation">,</span> bottom<span class="token operator">:</span> <span class="token string">'7%'</span><span class="token punctuation">,</span> width<span class="token operator">:</span> <span class="token string">'38%'</span><span class="token punctuation">,</span> height<span class="token operator">:</span> <span class="token string">'38%'</span><span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 为每个坐标轴指定对应网格</span>
+  xAxis<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>gridIndex<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> data<span class="token operator">:</span> xData<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>gridIndex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> data<span class="token operator">:</span> xData<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>gridIndex<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> data<span class="token operator">:</span> xData<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>gridIndex<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> data<span class="token operator">:</span> xData<span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  yAxis<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>gridIndex<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> data<span class="token operator">:</span> xData<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>gridIndex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> data<span class="token operator">:</span> xData<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>gridIndex<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> data<span class="token operator">:</span> xData<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>gridIndex<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> data<span class="token operator">:</span> xData<span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 为每个图表指定x,y轴</span>
+  series<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'I'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span><span class="token punctuation">,</span>
+      xAxisIndex<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      yAxisIndex<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> dataAll<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'II'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span><span class="token punctuation">,</span>
+      xAxisIndex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      yAxisIndex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> dataAll<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'III'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span><span class="token punctuation">,</span>
+      xAxisIndex<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      yAxisIndex<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> dataAll<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'IV'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span><span class="token punctuation">,</span>
+      xAxisIndex<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      yAxisIndex<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> dataAll<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+</code></pre></div><p><strong>嵌套饼状图</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 基于准备好的dom，初始化echarts实例</span>
+<span class="token keyword">let</span> myChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> legendData <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'餐饮'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">32</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'服务'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">98</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'建筑'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'软件'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">64</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">// 绘制图表</span>
+<span class="token keyword">let</span> option <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> <span class="token string">'学生分布情况'</span><span class="token punctuation">,</span>
+    left<span class="token operator">:</span> <span class="token string">'24'</span><span class="token punctuation">,</span>
+    top<span class="token operator">:</span> <span class="token string">'24'</span><span class="token punctuation">,</span>
+    textStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+      color<span class="token operator">:</span> <span class="token string">'#262F4D'</span><span class="token punctuation">,</span>
+      fontWeight<span class="token operator">:</span> <span class="token string">'Bold'</span><span class="token punctuation">,</span>
+      fontSize<span class="token operator">:</span> <span class="token number">18</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  tooltip<span class="token operator">:</span> <span class="token punctuation">{</span>
+    trigger<span class="token operator">:</span> <span class="token string">'item'</span><span class="token punctuation">,</span>
+    formatter<span class="token operator">:</span> <span class="token string">'{b}: {c} ({d}%)'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  legend<span class="token operator">:</span> <span class="token punctuation">{</span>
+    left<span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+    top<span class="token operator">:</span> <span class="token number">150</span><span class="token punctuation">,</span>
+    x<span class="token operator">:</span> <span class="token string">'left'</span><span class="token punctuation">,</span>
+    orient<span class="token operator">:</span> <span class="token string">'vertical'</span><span class="token punctuation">,</span>
+    icon<span class="token operator">:</span> <span class="token string">'circle'</span><span class="token punctuation">,</span>
+    itemHeight<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    itemGap<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">formatter</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> singleData <span class="token operator">=</span> legendData<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> item<span class="token punctuation">.</span>name <span class="token operator">==</span> name<span class="token punctuation">)</span>
+      <span class="token keyword">return</span> <span class="token string">'{a|'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'} {b|'</span> <span class="token operator">+</span> singleData<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">+</span> <span class="token string">'人}'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    textStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+      color<span class="token operator">:</span> <span class="token string">'#262F4D'</span><span class="token punctuation">,</span>
+      fontSize<span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+      rich<span class="token operator">:</span> <span class="token punctuation">{</span>
+        a<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        b<span class="token operator">:</span> <span class="token punctuation">{</span>
+          align<span class="token operator">:</span> <span class="token string">'right'</span><span class="token punctuation">,</span>
+          padding<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    data<span class="token operator">:</span> legendData
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  color<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'#FD9681'</span><span class="token punctuation">,</span> <span class="token string">'#4D81E7'</span><span class="token punctuation">,</span> <span class="token string">'#47D7EA'</span><span class="token punctuation">,</span> <span class="token string">'#AF87FD'</span><span class="token punctuation">,</span> <span class="token string">'#4E7AFF'</span><span class="token punctuation">,</span> <span class="token string">'#A8BEFF'</span><span class="token punctuation">,</span> <span class="token string">'#1AE1E5'</span><span class="token punctuation">,</span> <span class="token string">'#2194FF'</span><span class="token punctuation">,</span> <span class="token string">'#4ECB73'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  series<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      top<span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'pie'</span><span class="token punctuation">,</span>
+      selectedMode<span class="token operator">:</span> <span class="token string">'single'</span><span class="token punctuation">,</span>
+      selectedOffset<span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+      radius<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'30%'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token operator">:</span> <span class="token string">'{b}({c}) \n {d|{d}%}'</span><span class="token punctuation">,</span>
+        edgeDistance<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+        lineHeight<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token string">'#262F4D'</span><span class="token punctuation">,</span>
+        rich<span class="token operator">:</span> <span class="token punctuation">{</span>
+          d<span class="token operator">:</span> <span class="token punctuation">{</span>
+            lineHeight<span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+            align<span class="token operator">:</span> <span class="token string">'left'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      select<span class="token operator">:</span> <span class="token punctuation">{</span>
+        label<span class="token operator">:</span> <span class="token punctuation">{</span>
+          color<span class="token operator">:</span> <span class="token string">'#262F4D'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      labelLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+        show<span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      avoidLabelOverlap<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'考研'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'考公'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">320</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'考编'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">154</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'就业'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">421</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      top<span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'pie'</span><span class="token punctuation">,</span>
+      radius<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'43%'</span><span class="token punctuation">,</span> <span class="token string">'55%'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      labelLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+        length<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      label<span class="token operator">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token operator">:</span> <span class="token string">'{b}({c}) \n {d|{d}%}'</span><span class="token punctuation">,</span>
+        edgeDistance<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+        lineHeight<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token string">'#262F4D'</span><span class="token punctuation">,</span>
+        rich<span class="token operator">:</span> <span class="token punctuation">{</span>
+          d<span class="token operator">:</span> <span class="token punctuation">{</span>
+            lineHeight<span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+            align<span class="token operator">:</span> <span class="token string">'left'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">labelLayout</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> isLeft <span class="token operator">=</span> params<span class="token punctuation">.</span>labelRect<span class="token punctuation">.</span>x <span class="token operator">&lt;</span> myChart<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> points <span class="token operator">=</span> params<span class="token punctuation">.</span>labelLinePoints<span class="token punctuation">;</span>
+        <span class="token comment">// Update the end point.</span>
+        points<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> isLeft <span class="token operator">?</span>
+          params<span class="token punctuation">.</span>labelRect<span class="token punctuation">.</span>x <span class="token operator">:</span>
+          params<span class="token punctuation">.</span>labelRect<span class="token punctuation">.</span>x <span class="token operator">+</span> params<span class="token punctuation">.</span>labelRect<span class="token punctuation">.</span>width<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          labelLinePoints<span class="token operator">:</span> points
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'餐饮'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">32</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'服务'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">98</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'建筑'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'软件'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">64</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+option <span class="token operator">&amp;&amp;</span> myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'resize'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  myChart<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p><strong>2、折线面积图</strong></p> <p><code>smooth</code>设置折线平滑显示，然后通过<code>areaStyle</code>设置折线包含的面积背景。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> myChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> option <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> <span class="token string">'学生认证动态'</span><span class="token punctuation">,</span>
+    left<span class="token operator">:</span> <span class="token string">'24'</span><span class="token punctuation">,</span>
+    textStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+      color<span class="token operator">:</span> <span class="token string">'#262F4D'</span><span class="token punctuation">,</span>
+      fontWeight<span class="token operator">:</span> <span class="token string">'Bold'</span><span class="token punctuation">,</span>
+      fontSize<span class="token operator">:</span> <span class="token number">18</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  tooltip<span class="token operator">:</span> <span class="token punctuation">{</span>
+    trigger<span class="token operator">:</span> <span class="token string">'axis'</span><span class="token punctuation">,</span>
+    axisPointer<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 坐标轴指示器，坐标轴触发有效</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span> <span class="token comment">// 默认为直线，可选为：'line' | 'shadow'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  grid<span class="token operator">:</span> <span class="token punctuation">{</span>
+    x<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+    y<span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+    x2<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+    y2<span class="token operator">:</span> <span class="token number">30</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  xAxis<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">'category'</span><span class="token punctuation">,</span>
+    <span class="token comment">// x轴</span>
+    axisLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+      lineStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'#DBDBDB'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 底部刻度线</span>
+    axisTick<span class="token operator">:</span> <span class="token punctuation">{</span>
+      show<span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 底部文本样式</span>
+    axisLabel<span class="token operator">:</span> <span class="token punctuation">{</span>
+      color<span class="token operator">:</span> <span class="token string">'#333951'</span><span class="token punctuation">,</span>
+      margin<span class="token operator">:</span> <span class="token number">15</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 两边是否留白</span>
+    boundaryGap<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    data<span class="token operator">:</span> xData
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  yAxis<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'每日认证趋势'</span><span class="token punctuation">,</span>
+    <span class="token comment">// nameGap: -5,</span>
+    nameTextStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+      color<span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+      fontSize<span class="token operator">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+      align<span class="token operator">:</span> <span class="token string">'left'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    type<span class="token operator">:</span> <span class="token string">'value'</span><span class="token punctuation">,</span>
+    axisLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+      show<span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    axisLabel<span class="token operator">:</span> <span class="token punctuation">{</span>
+      color<span class="token operator">:</span> <span class="token string">'#999'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    splitLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+      show<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      lineStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        type<span class="token operator">:</span> <span class="token string">'dashed'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 背景</span>
+    <span class="token comment">// splitArea: {</span>
+    <span class="token comment">//   show: true</span>
+    <span class="token comment">// }</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  series<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span><span class="token punctuation">,</span>
+      <span class="token comment">// 关键</span>
+      smooth<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">// 纯背景</span>
+      areaStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'#ccc'</span><span class="token punctuation">,</span>
+        opacity<span class="token operator">:</span> <span class="token number">0.7</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span><span class="token punctuation">,</span>
+      smooth<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">// 渐变背景</span>
+      areaStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        opacity<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">echarts<span class="token punctuation">.</span>graphic<span class="token punctuation">.</span>LinearGradient</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+          offset<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          color<span class="token operator">:</span> <span class="token string">'#4E7AFF'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          offset<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+          color<span class="token operator">:</span> <span class="token string">'#CCDDFF'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> data
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+option <span class="token operator">&amp;&amp;</span> myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  myChart<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>3、上下对折折线图</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 基于准备好的dom，初始化echarts实例</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>myChart <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>option <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> <span class="token string">'上下对折折线图'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  tooltip<span class="token operator">:</span> <span class="token punctuation">{</span>
+    trigger<span class="token operator">:</span> <span class="token string">'axis'</span><span class="token punctuation">,</span>
+    axisPointer<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">formatter</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> formatList <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>axisValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;br/&gt;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+      params<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> colorIndex <span class="token operator">=</span> that<span class="token punctuation">.</span>colorIndex <span class="token operator">?</span> that<span class="token punctuation">.</span>colorIndex <span class="token operator">:</span> index <span class="token operator">%</span> <span class="token punctuation">(</span>params<span class="token punctuation">.</span>length <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">==</span> params<span class="token punctuation">.</span>length <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          formatList<span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;br/&gt; </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>marker<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>seriesName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;br/&gt;</span><span class="token template-punctuation string">`</span></span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          formatList<span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>marker<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>seriesName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;br/&gt;</span><span class="token template-punctuation string">`</span></span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> formatList
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  axisPointer<span class="token operator">:</span> <span class="token punctuation">{</span>
+    link<span class="token operator">:</span> <span class="token punctuation">{</span>xAxisIndex<span class="token operator">:</span> <span class="token string">'all'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  grid<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      top<span class="token operator">:</span> <span class="token string">'5%'</span><span class="token punctuation">,</span>
+      left<span class="token operator">:</span> <span class="token string">'80'</span><span class="token punctuation">,</span>
+      right<span class="token operator">:</span> <span class="token string">'30'</span><span class="token punctuation">,</span>
+      height<span class="token operator">:</span> <span class="token string">'40%'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      top<span class="token operator">:</span> <span class="token string">'45%'</span><span class="token punctuation">,</span>
+      left<span class="token operator">:</span> <span class="token string">'80'</span><span class="token punctuation">,</span>
+      right<span class="token operator">:</span> <span class="token string">'30'</span><span class="token punctuation">,</span>
+      height<span class="token operator">:</span> <span class="token string">'40%'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  xAxis<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">'category'</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> xData<span class="token punctuation">,</span>
+      boundaryGap <span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      splitLine<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisLabel<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisTick<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisPointer<span class="token operator">:</span> <span class="token punctuation">{</span>
+        z<span class="token operator">:</span> <span class="token number">100</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">'category'</span><span class="token punctuation">,</span>
+      gridIndex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      boundaryGap <span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      axisLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+        lineStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+          color<span class="token operator">:</span> <span class="token string">'#ccc'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      splitLine<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisTick<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisLabel<span class="token operator">:</span> <span class="token punctuation">{</span>
+        show<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token string">'#444'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'星期一'</span><span class="token punctuation">,</span><span class="token string">'星期二'</span><span class="token punctuation">,</span><span class="token string">'星期三'</span><span class="token punctuation">,</span><span class="token string">'星期四'</span><span class="token punctuation">,</span><span class="token string">'星期五'</span><span class="token punctuation">,</span><span class="token string">'星期六'</span><span class="token punctuation">,</span><span class="token string">'星期日'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  yAxis<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'接收流量'</span><span class="token punctuation">,</span>
+      nameLocation<span class="token operator">:</span> <span class="token string">'middle'</span><span class="token punctuation">,</span>
+      nameRotate<span class="token operator">:</span> <span class="token string">'-90'</span><span class="token punctuation">,</span>
+      nameGap<span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+      nameTextStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+        fontSize<span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisLine<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisTick<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      inverse<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> <span class="token string">'发送流量'</span><span class="token punctuation">,</span>
+      nameLocation<span class="token operator">:</span> <span class="token string">'middle'</span><span class="token punctuation">,</span>
+      nameRotate<span class="token operator">:</span> <span class="token string">'-90'</span><span class="token punctuation">,</span>
+      nameGap<span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+      nameTextStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+        fontSize<span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      gridIndex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      axisLine<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisTick<span class="token operator">:</span> <span class="token punctuation">{</span>show<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 数据缩放</span>
+  dataZoom<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    show<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    type<span class="token operator">:</span> <span class="token string">'inside'</span><span class="token punctuation">,</span>
+    start<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    end<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    xAxisIndex<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    show<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    start<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    end<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    xAxisIndex<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  series<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'上折线名称'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span><span class="token punctuation">,</span>
+      showSymbol<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      smooth<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      lineStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'blue'</span><span class="token punctuation">,</span>
+        opacity<span class="token operator">:</span> <span class="token number">0.3</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      areaStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'blue'</span><span class="token punctuation">,</span>
+        opacity<span class="token operator">:</span> <span class="token number">0.7</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'下折线名称'</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> <span class="token string">'line'</span><span class="token punctuation">,</span>
+      showSymbol<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      smooth<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      lineStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'red'</span><span class="token punctuation">,</span>
+        opacity<span class="token operator">:</span> <span class="token number">0.3</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      areaStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'red'</span><span class="token punctuation">,</span>
+        opacity<span class="token operator">:</span> <span class="token number">0.7</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      xAxisIndex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      yAxisIndex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 绘制图表</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>option <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>4、叠加柱状图</strong></p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">let</span> myChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 绘制图表</span>
+  <span class="token keyword">let</span> option <span class="token operator">=</span> <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token punctuation">{</span>
+      text<span class="token operator">:</span> <span class="token string">'验证分布'</span><span class="token punctuation">,</span>
+      left<span class="token operator">:</span> <span class="token string">'24'</span><span class="token punctuation">,</span>
+      textStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'#262F4D'</span><span class="token punctuation">,</span>
+        fontWeight<span class="token operator">:</span> <span class="token string">'Bold'</span><span class="token punctuation">,</span>
+        fontSize<span class="token operator">:</span> <span class="token number">18</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    tooltip<span class="token operator">:</span> <span class="token punctuation">{</span>
+      trigger<span class="token operator">:</span> <span class="token string">'axis'</span><span class="token punctuation">,</span>
+      axisPointer<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 坐标轴指示器，坐标轴触发有效</span>
+        type<span class="token operator">:</span> <span class="token string">'none'</span> <span class="token comment">// 默认为直线，可选为：'line' | 'shadow'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    grid<span class="token operator">:</span> <span class="token punctuation">{</span>
+      x<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+      y<span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+      x2<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+      y2<span class="token operator">:</span> <span class="token number">30</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    legend<span class="token operator">:</span> <span class="token punctuation">{</span>
+      right<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+      top<span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    xAxis<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">'category'</span><span class="token punctuation">,</span>
+      <span class="token comment">// x轴</span>
+      axisLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+        lineStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+          color<span class="token operator">:</span> <span class="token string">'#DBDBDB'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 底部刻度线</span>
+      axisTick<span class="token operator">:</span> <span class="token punctuation">{</span>
+        show<span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 底部文本样式</span>
+      axisLabel<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'#333951'</span><span class="token punctuation">,</span>
+        interval<span class="token operator">:</span> <span class="token number">0</span> <span class="token comment">//全部显示横坐标</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'星期一'</span><span class="token punctuation">,</span><span class="token string">'星期二'</span><span class="token punctuation">,</span><span class="token string">'星期三'</span><span class="token punctuation">,</span><span class="token string">'星期四'</span><span class="token punctuation">,</span><span class="token string">'星期五'</span><span class="token punctuation">,</span><span class="token string">'星期六'</span><span class="token punctuation">,</span><span class="token string">'星期日'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    yAxis<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">'value'</span><span class="token punctuation">,</span>
+      axisLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+        show<span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisLabel<span class="token operator">:</span> <span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'#999'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      splitLine<span class="token operator">:</span> <span class="token punctuation">{</span>
+        show<span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 背景</span>
+      splitArea<span class="token operator">:</span> <span class="token punctuation">{</span>
+        show<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    series<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        showBackground<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">'已验证'</span><span class="token punctuation">,</span>
+        type<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+        stack<span class="token operator">:</span> <span class="token string">'百分比'</span><span class="token punctuation">,</span>
+        itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+          color<span class="token operator">:</span> <span class="token string">'#4D81E7'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        barWidth<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        showBackground<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">'未验证'</span><span class="token punctuation">,</span>
+        type<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+        stack<span class="token operator">:</span> <span class="token string">'百分比'</span><span class="token punctuation">,</span>
+        itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+          color<span class="token operator">:</span> <span class="token string">'#CCDDFF'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        barWidth<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  option <span class="token operator">&amp;&amp;</span> myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    myChart<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p><strong>5、tooltip的formatter配置</strong></p> <p>tooltip设置鼠标经过时显示的提示框。正常都是自动显示series设置的name和当前的值，但有时需要设置特殊的值和样式时，就需要通过formatter函数来配置了。
+formatter有两种形式来配置 字符串模板和回调函数。</p> <p>字符串模板：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 字符串模板搭配 textStyle.rich使用</span>
+
+formatter<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'{a|这段文本采用样式a}'</span><span class="token punctuation">,</span>
+    <span class="token string">'{b|这段文本采用样式b}这段用默认样式{x|这段用样式x}'</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  rich<span class="token operator">:</span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span> <span class="token punctuation">{</span>
+    color<span class="token operator">:</span> <span class="token string">'red'</span><span class="token punctuation">,</span>
+    lineHeight<span class="token operator">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  b<span class="token operator">:</span> <span class="token punctuation">{</span>
+    backgroundColor<span class="token operator">:</span> <span class="token punctuation">{</span>
+        image<span class="token operator">:</span> <span class="token string">'xxx/xxx.jpg'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    height<span class="token operator">:</span> <span class="token number">40</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>回调函数：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 回调函数通过对参数params拼接的字符串来显示</span>
+<span class="token function-variable function">formatter</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span>
+
+  <span class="token keyword">let</span> formatList <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>axisValue<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;br/&gt;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+  params<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    formatList<span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>marker<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>seriesName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>item<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">% &lt;br/&gt;</span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> formatList
+<span class="token punctuation">}</span>
+
+</code></pre></div><p><strong>6、图表自适应</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> myChart <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  myChart<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>7、动态更新图表</strong></p> <p>通过echarts实例的setOption(option)来更新数据，可能有的版本直接更新不起效果，先要用实例的clear()方法清除实例，然后再重新渲染echarts。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">this</span><span class="token punctuation">.</span>myChart <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getOption</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 设置option，更新data数据，然后重新渲染</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>option <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>8、柱状图颜色渐变</strong></p> <p>和折线面积图一样，使用 <code>new echarts.graphic.LinearGradient()</code> 来对 <code>color</code> 进行赋值就可以设置渐变色了。<code>offset</code>为 0~1 ，颜色从0到1逐渐渐变。</p> <div class="language-js extra-class"><pre class="language-js"><code>series<span class="token operator">:</span> <span class="token punctuation">[</span>
+	<span class="token punctuation">{</span>
+		type<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+		showBackground<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+		itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+			color<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">echarts<span class="token punctuation">.</span>graphic<span class="token punctuation">.</span>LinearGradient</span><span class="token punctuation">(</span>
+				<span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span>
+				<span class="token punctuation">[</span>
+					<span class="token punctuation">{</span>offset<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> color<span class="token operator">:</span> <span class="token string">'#83bff6'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+					<span class="token punctuation">{</span>offset<span class="token operator">:</span> <span class="token number">0.5</span><span class="token punctuation">,</span> color<span class="token operator">:</span> <span class="token string">'#188df0'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+					<span class="token punctuation">{</span>offset<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> color<span class="token operator">:</span> <span class="token string">'#188df0'</span><span class="token punctuation">}</span>
+				<span class="token punctuation">]</span>
+			<span class="token punctuation">)</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		data<span class="token operator">:</span> data
+	<span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p><strong>8、柱状图可点击</strong></p> <p>和折线面积图一样，使用 <code>new echarts.graphic.LinearGradient()</code> 来对 <code>color</code> 进行赋值就可以设置渐变色了。<code>offset</code>为 0~1 ，颜色从0到1逐渐渐变。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> myChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> option <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+option <span class="token operator">&amp;&amp;</span> myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  myChart<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//点击柱状图</span>
+myChart<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xingchen/synthesize/markdown/" class="prev">
+        Markdown语法
+      </a></span> <span class="next"><a href="/xingchen/synthesize/map/腾讯地图使用.html">
+        腾讯地图使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xingchen/assets/js/app.449d8865.js" defer></script><script src="/xingchen/assets/js/2.8855fdcf.js" defer></script><script src="/xingchen/assets/js/81.d9e7557b.js" defer></script>
+  </body>
+</html>
